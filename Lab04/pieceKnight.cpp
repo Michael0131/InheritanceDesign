@@ -50,7 +50,8 @@ void Knight::getMoves(set<Move>& moves, const Board& board) const
         int c = c0 + OFFSETS[i][0];
         int r = r0 + OFFSETS[i][1];
         Position dest(c, r);
-        int testVal = dest.getLocation();
+        int testColVal = dest.getCol();
+        int testRowVal = dest.getRow();
         if (!dest.isValid())
             continue;
 
@@ -67,7 +68,7 @@ void Knight::getMoves(set<Move>& moves, const Board& board) const
 
         m.setWhiteMove(fWhite);
         moves.insert(m);
-        std::cout << "Possible knight moves:\n";
+        std::cout << moves.size();
 
     }
     
