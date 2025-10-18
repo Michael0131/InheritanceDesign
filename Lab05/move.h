@@ -47,6 +47,8 @@ public:
 
 	void setWhiteMove(bool white) { isWhite = white; }
 
+	const Position& getDest() const { return dest; }
+
 	// Comparisons
 	bool operator==(const Move& rhs) const;
 	bool operator!=(const Move& rhs) const;

@@ -81,6 +81,9 @@
     <ClCompile Include="pieceKing.h">
       <Filter>Header Files</Filter>
     </ClCompile>
+    <ClCompile Include="pieceRook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="move.h">

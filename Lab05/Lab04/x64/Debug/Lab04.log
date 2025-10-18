@@ -1,0 +1,7 @@
+﻿  pieceRook.cpp
+C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\pieceRook.cpp(41,40): error C2248: 'Board::board': cannot access protected member declared in class 'Board'
+      C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\board.h(63,12):
+      see declaration of 'Board::board'
+      C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\board.h(33,7):
+      see declaration of 'Board'
+  

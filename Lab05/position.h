@@ -163,6 +163,22 @@ public:
         }
     }
 
+    /***********************************************
+     * POSITION : GET TEXT
+     * Return chess notation like "e4"
+    ***********************************************/
+    string getText() const
+    {
+        if (isInvalid())
+            return "??";
+
+        char text[3];
+        text[0] = 'a' + getCol();
+        text[1] = '1' + getRow();
+        text[2] = '\0';
+        return string(text);
+    }
+
     const Position& operator=(const char* rhs)
     {
         *this = Position(rhs);
