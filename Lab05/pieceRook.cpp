@@ -1,47 +1,60 @@
-/***********************************************************************
+﻿/***********************************************************************
  * Source File:
- *    PIECE ROOK
+ *    ROOK
  * Author:
  *    <your name here>
  * Summary:
- *    The Rook class implementation
+ *    Implementation of the Rook chess piece.
  ************************************************************************/
 
 #include "pieceRook.h"
 #include "board.h"
 #include "uiDraw.h"
+#include <set>
+#include <cassert>
+using namespace std;
 
- /**********************************************
-  * ROOK : DISPLAY
-  **********************************************/
+/***************************************************
+ * ROOK : DISPLAY
+ * Draw the rook on the board.
+ ***************************************************/
 void Rook::display(ogstream* pgout) const
 {
     pgout->drawRook(position, !isWhite());
 }
 
-/**********************************************
+/***************************************************
  * ROOK : GET MOVES
- **********************************************/
+ * Generate all legal rook moves (vertical and horizontal slides).
+ ***************************************************/
 void Rook::getMoves(set<Move>& moves, const Board& board) const
 {
-    static const Delta directions[4] =
-    {
-       {  1,  0 },  // up
-       { -1,  0 },  // down
-       {  0,  1 },  // right
-       {  0, -1 }   // left
+    static const int DIRECTIONS[4][2] = {
+        {  0,  1 },  // up
+        {  0, -1 },  // down
+        { -1,  0 },  // left
+        {  1,  0 }   // right
     };
 
-    for (auto d : directions)
+    int c0 = position.getCol();
+    int r0 = position.getRow();
+
+    for (int i = 0; i < 4; ++i)
     {
-        Position dest = position + d;
+        int dc = DIRECTIONS[i][0];
+        int dr = DIRECTIONS[i][1];
 
-        while (dest.isValid())
+        int c = c0 + dc;
+        int r = r0 + dr;
+
+        // slide in direction until blocked
+        while (c >= 0 && c < 8 && r >= 0 && r < 8)
         {
-            const Piece* target = board.board[dest.getCol()][dest.getRow()];
+            Position dest(c, r);
+            const Piece& target = board[dest.getLocation()];
 
-            // Empty square
-            if (target == nullptr)
+            // empty square → valid simple move
+            if (target.getType() == SPACE)
             {
                 Move m;
                 m.assignSimple(position, dest);
@@ -50,20 +63,22 @@ void Rook::getMoves(set<Move>& moves, const Board& board) const
             }
             else
             {
-                // Friendly piece � stop, no move
-                if (target->isWhite() == fWhite)
-                    break;
-
-                // Enemy piece � capture, then stop
-                Move m;
-                m.assignCapture(position, dest, target->getType());
-                m.setWhiteMove(fWhite);
-                moves.insert(m);
+                // occupied → stop sliding after this square
+                if (target.isWhite() != fWhite)
+                {
+                    // enemy → capture allowed
+                    Move m;
+                    m.assignCapture(position, dest, target.getType());
+                    m.setWhiteMove(fWhite);
+                    moves.insert(m);
+                }
+                // break regardless of color
                 break;
             }
 
-            dest += d;
+            // keep going in same direction
+            c += dc;
+            r += dr;
         }
     }
 }
-

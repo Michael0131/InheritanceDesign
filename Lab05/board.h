@@ -96,6 +96,14 @@ public:
       assert(false); 
       throw true;
    }
+   // Simple safe read accessor for the piece pointer at a position
+   const Piece* getPiece(const Position& pos) const
+   {
+       if (!pos.isValid())
+           return nullptr;
+       return board[pos.getCol()][pos.getRow()];
+   }
+
 };
 
 /***************************************************

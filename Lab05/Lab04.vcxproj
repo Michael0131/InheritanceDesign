@@ -105,6 +105,7 @@
     <ClCompile Include="pieceBishop.cpp" />
     <ClCompile Include="pieceKing.h" />
     <ClCompile Include="pieceKnight.cpp" />
+    <ClCompile Include="pieceQueen.cpp" />
     <ClCompile Include="pieceQueen.h" />
     <ClCompile Include="pieceRook.cpp" />
     <ClCompile Include="position.cpp" />
