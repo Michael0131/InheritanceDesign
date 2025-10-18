@@ -165,7 +165,7 @@ void TestKing::getMoves_free()
     Board board(nullptr, true);
     King king(Position("d5"), true);
     set<Move> moves;
-
+    
     king.getMoves(moves, board);
 
     const char* pos[] = { "c6","d6","e6","c5","e5","c4","d4","e4" };
@@ -193,6 +193,8 @@ void TestKing::getMoves_end()
     Board board(nullptr, true);
     King king(Position("b1"), true);
     set<Move> moves;
+
+    king.setLastMove(1); // king already moved
 
     king.getMoves(moves, board);
 

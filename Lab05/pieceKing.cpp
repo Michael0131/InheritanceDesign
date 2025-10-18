@@ -58,16 +58,27 @@ void King::getMoves(set<Move>& moves, const Board& board) const
     // 2️⃣ — Castling (only if king has not moved)
     if (!isMoved())
     {
-        // King-side castle: move 2 columns to the right
-        Move mKing;
-        mKing.assignCastleKing(position, Position(c0 + 2, r0));
-        mKing.setWhiteMove(fWhite);
-        moves.insert(mKing);
-
-        // Queen-side castle: move 2 columns to the left
-        Move mQueen;
-        mQueen.assignCastleQueen(position, Position(c0 - 2, r0));
-        mQueen.setWhiteMove(fWhite);
-        moves.insert(mQueen);
+        int r = position.getRow();
+        Position destKC(0, r);
+        const Piece& targetKC = board[destKC];
+        if (targetKC.getType() == ROOK && targetKC.isWhite() == fWhite && targetKC.getNMoves() == 0)
+        {
+            // King-side castle: move 2 columns to the right
+            Move mKing;
+            mKing.assignCastleKing(position, Position(c0 + 2, r0));
+            mKing.setWhiteMove(fWhite);
+            moves.insert(mKing);
+        }
+        
+        Position destQC(7, r);
+        const Piece& targetQC = board[destQC];
+        if (targetQC.getType() == ROOK && targetQC.isWhite() == fWhite && targetQC.getNMoves() == 0)
+        {
+            // Queen-side castle: move 2 columns to the left
+            Move mQueen;
+            mQueen.assignCastleQueen(position, Position(c0 - 2, r0));
+            mQueen.setWhiteMove(fWhite);
+            moves.insert(mQueen);
+        }
     }
 }

@@ -69,10 +69,10 @@ void TestRook::getMoves_blocked()
     Rook rook(Position("d2"), true);
 
     // Surround rook with friendly pawns
-    board.board[3][3] = new DummyPiece(Position("d3"), true);
-    board.board[3][1] = new DummyPiece(Position("d1"), true);
-    board.board[2][2] = new DummyPiece(Position("c2"), true);
-    board.board[4][2] = new DummyPiece(Position("e2"), true);
+    board.board[3][0] = new DummyPiece(Position("d1"), true);
+    board.board[4][1] = new DummyPiece(Position("e2"), true);
+    board.board[3][2] = new DummyPiece(Position("d3"), true);
+    board.board[2][1] = new DummyPiece(Position("c2"), true);
 
     set<Move> moves;
     rook.getMoves(moves, board);
@@ -119,16 +119,16 @@ void TestRook::getMoves_slideToBlock()
 
     // Friendly pieces at ends
     board.board[3][7] = new DummyPiece(Position("d8"), true);
-    board.board[3][1] = new DummyPiece(Position("d1"), true);
-    board.board[0][2] = new DummyPiece(Position("a2"), true);
-    board.board[7][2] = new DummyPiece(Position("h2"), true);
+    board.board[3][0] = new DummyPiece(Position("d1"), true);
+    board.board[0][1] = new DummyPiece(Position("a2"), true);
+    board.board[7][1] = new DummyPiece(Position("h2"), true);
 
     set<Move> moves;
     rook.getMoves(moves, board);
 
     // Up: can move to d3..d7, but not d8
     assertUnit(!hasSimple(moves, Position("d2"), Position("d8"), true));
-    for (int r = 3; r <= 7; ++r)
+    for (int r = 2; r < 7; ++r)
         assertUnit(hasSimple(moves, Position("d2"), Position(3, r), true));
 
     // Down: blocked at d1
