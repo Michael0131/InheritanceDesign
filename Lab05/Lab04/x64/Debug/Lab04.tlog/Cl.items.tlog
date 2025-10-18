@@ -1,26 +1,26 @@
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\board.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\board.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\chess.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\chess.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\move.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\move.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\piece.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\piece.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\pieceBishop.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\pieceBishop.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\pieceKing.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\pieceKing.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\pieceKing.h;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\pieceKing.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\pieceKnight.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\pieceKnight.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\piecePawn.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\piecePawn.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\pieceQueen.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\pieceQueen.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\pieceQueen.h;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\pieceQueen.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\pieceRook.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\pieceRook.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\position.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\position.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\test.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\test.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\testBishop.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\testBishop.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\testBoard.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\testBoard.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\testKing.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\testKing.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\testKnight.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\testKnight.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\testMove.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\testMove.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\testPawn.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\testPawn.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\testPiece.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\testPiece.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\testPosition.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\testPosition.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\testQueen.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\testQueen.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\testRook.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\testRook.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\uiDraw.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\uiDraw.obj
-C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\uiInteract.cpp;C:\Users\Michael J\Source\Repos\InheritanceDesign3333333333\Lab05\Lab04\x64\Debug\uiInteract.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\board.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\board.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\chess.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\chess.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\move.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\move.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\piece.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\piece.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\pieceBishop.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\pieceBishop.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\pieceKing.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\pieceKing.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\pieceKing.h;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\pieceKing.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\pieceKnight.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\pieceKnight.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\piecePawn.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\piecePawn.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\pieceQueen.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\pieceQueen.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\pieceQueen.h;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\pieceQueen.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\pieceRook.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\pieceRook.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\position.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\position.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\test.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\test.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\testBishop.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\testBishop.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\testBoard.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\testBoard.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\testKing.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\testKing.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\testKnight.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\testKnight.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\testMove.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\testMove.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\testPawn.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\testPawn.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\testPiece.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\testPiece.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\testPosition.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\testPosition.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\testQueen.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\testQueen.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\testRook.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\testRook.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\uiDraw.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\uiDraw.obj
+C:\Users\jamga\Documents\InheritanceDesign\Lab05\uiInteract.cpp;C:\Users\jamga\Documents\InheritanceDesign\Lab05\Lab04\x64\Debug\uiInteract.obj

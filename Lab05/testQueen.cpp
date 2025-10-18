@@ -79,14 +79,14 @@ void TestQueen::getMoves_blocked()
     Queen queen(Position("d2"), true);
 
     // Friendly pieces block all 8 directions
-    board.board[3][3] = new DummyPiece(Position("d3"), true);
-    board.board[3][1] = new DummyPiece(Position("d1"), true);
-    board.board[2][2] = new DummyPiece(Position("c2"), true);
-    board.board[4][2] = new DummyPiece(Position("e2"), true);
-    board.board[2][3] = new DummyPiece(Position("c3"), true);
-    board.board[4][3] = new DummyPiece(Position("e3"), true);
-    board.board[2][1] = new DummyPiece(Position("c1"), true);
-    board.board[4][1] = new DummyPiece(Position("e1"), true);
+    board.board[3][2] = new DummyPiece(Position("d3"), true);
+    board.board[3][0] = new DummyPiece(Position("d1"), true);
+    board.board[2][1] = new DummyPiece(Position("c2"), true);
+    board.board[4][1] = new DummyPiece(Position("e2"), true);
+    board.board[2][2] = new DummyPiece(Position("c3"), true);
+    board.board[4][2] = new DummyPiece(Position("e3"), true);
+    board.board[2][0] = new DummyPiece(Position("c1"), true);
+    board.board[4][0] = new DummyPiece(Position("e1"), true);
 
     set<Move> moves;
     queen.getMoves(moves, board);
@@ -121,20 +121,23 @@ void TestQueen::getMoves_blocked()
 void TestQueen::getMoves_slideToEnd()
 {
     Board board(nullptr, true);
-    Queen queen(Position("d2"), true);
+    Queen queen(Position("c2"), true);
     set<Move> moves;
 
     queen.getMoves(moves, board);
 
-    // A queen can move like rook + bishop = 27 total moves
-    assertUnit(moves.size() == 27);
+    // A queen can move like rook + bishop = 23 total moves
+    assertUnit(moves.size() == 23);
 
     // spot-check
-    assertUnit(hasSimple(moves, Position("d2"), Position("d8"), true)); // up
-    assertUnit(hasSimple(moves, Position("d2"), Position("a5"), true)); // diag up-left
-    assertUnit(hasSimple(moves, Position("d2"), Position("h6"), true)); // diag up-right
-    assertUnit(hasSimple(moves, Position("d2"), Position("a2"), true)); // left
-    assertUnit(hasSimple(moves, Position("d2"), Position("h2"), true)); // right
+    assertUnit(hasSimple(moves, Position("c2"), Position("a2"), true)); // left
+    assertUnit(hasSimple(moves, Position("c2"), Position("a4"), true)); // diag up-left
+    assertUnit(hasSimple(moves, Position("c2"), Position("c8"), true)); // up
+    assertUnit(hasSimple(moves, Position("c2"), Position("h7"), true)); // diag up-right
+    assertUnit(hasSimple(moves, Position("c2"), Position("h2"), true)); // right
+    assertUnit(hasSimple(moves, Position("c2"), Position("d1"), true)); // diag down-right
+    assertUnit(hasSimple(moves, Position("c2"), Position("c1"), true)); // down
+    assertUnit(hasSimple(moves, Position("c2"), Position("b1"), true)); // diag down-left
 }
 
 /*************************************
@@ -156,13 +159,13 @@ void TestQueen::getMoves_slideToBlock()
     Board board(nullptr, true);
     Queen queen(Position("d2"), true);
 
-    // Friendly blockers at each “end”
+    // Friendly blockers at each ï¿½endï¿½
     board.board[3][7] = new DummyPiece(Position("d8"), true);
-    board.board[3][1] = new DummyPiece(Position("d1"), true);
-    board.board[0][2] = new DummyPiece(Position("a2"), true);
-    board.board[7][2] = new DummyPiece(Position("h2"), true);
-    board.board[0][5] = new DummyPiece(Position("a5"), true);
-    board.board[6][5] = new DummyPiece(Position("g5"), true);
+    board.board[3][0] = new DummyPiece(Position("d1"), true);
+    board.board[0][1] = new DummyPiece(Position("a2"), true);
+    board.board[7][1] = new DummyPiece(Position("h2"), true);
+    board.board[0][4] = new DummyPiece(Position("a5"), true);
+    board.board[6][4] = new DummyPiece(Position("g5"), true);
     board.board[0][0] = new DummyPiece(Position("a1"), true);
     board.board[6][0] = new DummyPiece(Position("g1"), true);
 
