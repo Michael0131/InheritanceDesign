@@ -216,10 +216,9 @@ void Board::move(const Move& move)
         int dir = pSrc->isWhite() ? -1 : 1;
         Position capturedPos(dst.getCol(), dst.getRow() + dir);
 
-        // Delete the captured pawn first
+        // Remove the captured pawn first
         if (board[capturedPos.getCol()][capturedPos.getRow()])
         {
-            delete board[capturedPos.getCol()][capturedPos.getRow()];
             board[capturedPos.getCol()][capturedPos.getRow()] = nullptr;
         }
 

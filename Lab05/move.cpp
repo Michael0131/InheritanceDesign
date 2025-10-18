@@ -48,7 +48,7 @@ void Move::assign(const Position& src, const Position& dst, MoveType mt)
     text = "";
     
     
-    if (mt == ENPASSANT)
+    if (moveType == ENPASSANT)
     {
         enPassant = true;
     }

@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab05\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E47F2C-242D-4AB1-90EC-058438EF136E}|Lab04.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab05\\testBoard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A9E47F2C-242D-4AB1-90EC-058438EF136E}|Lab04.vcxproj|solutionrelative:testBoard.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E47F2C-242D-4AB1-90EC-058438EF136E}|Lab04.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab05\\board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A9E47F2C-242D-4AB1-90EC-058438EF136E}|Lab04.vcxproj|solutionrelative:board.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9E47F2C-242D-4AB1-90EC-058438EF136E}|Lab04.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab05\\move.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A9E47F2C-242D-4AB1-90EC-058438EF136E}|Lab04.vcxproj|solutionrelative:move.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "board.cpp",
+              "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab05\\board.cpp",
+              "RelativeDocumentMoniker": "board.cpp",
+              "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab05\\board.cpp",
+              "RelativeToolTip": "board.cpp",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAcwNcAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-18T19:25:37.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "move.cpp",
+              "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab05\\move.cpp",
+              "RelativeDocumentMoniker": "move.cpp",
+              "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab05\\move.cpp",
+              "RelativeToolTip": "move.cpp",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-18T19:05:28.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "testBoard.cpp",
+              "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab05\\testBoard.cpp",
+              "RelativeDocumentMoniker": "testBoard.cpp",
+              "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab05\\testBoard.cpp",
+              "RelativeToolTip": "testBoard.cpp",
+              "ViewState": "AgIAAEQBAAAAAAAAAAAAAFEBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-18T19:04:52.487Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -299,13 +299,15 @@ void TestBoard::move_pawnDouble()
 void TestBoard::move_pawnEnpassant()
 {
 	// SETUP
-	Move a5b6E;
-	a5b6E.source.set(0, 4);   // a5 (white pawn)
-	a5b6E.dest.set(1, 5);     // b6 (target square)
+	Position src(0, 4);
+	Position dest(1, 5);
+	Move a5b6E(src, dest, Move::ENPASSANT);
+	//a5b6E.source.set(0, 4);   // a5 (white pawn)
+	//a5b6E.dest.set(1, 5);     // b6 (target square)
 	a5b6E.capture = PAWN;
 	a5b6E.promote = SPACE;
 	a5b6E.isWhite = true;
-	a5b6E.moveType = Move::ENPASSANT;
+	//a5b6E.moveType = Move::ENPASSANT;
 
 	Board board(nullptr, true /*noreset*/);
 	board.numMoves = 9;
@@ -333,10 +335,7 @@ void TestBoard::move_pawnEnpassant()
 	assertUnit(PieceSpy::numAssign == 0);
 	assertUnit(PieceSpy::numMove == 0);
 
-	/*cout << board.board[1][4]->getType() << endl;*/
-
-	cout << a5b6E.isEnPassant() << endl;
-
+	
 	// TEARDOWN
 	delete board.board[0][4];
 	delete board.board[1][4];
