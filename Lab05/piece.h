@@ -2,7 +2,7 @@
  * Header File:
  *    PIECE
  * Author:
-*    <your name here>
+ *    <your name here>
  * Summary:
  *    The Piece base class and all the derived classes:
  *       SPACE, KING, QUEEN, ROOK, KNIGHT, BISHOP, PAWN
@@ -32,7 +32,6 @@ class TestRook;
 class TestBishop;
 class TestKnight;
 class TestBoard;
-
 
 /***************************************************
  * PIECE
@@ -74,17 +73,15 @@ public:
     // overwritten by the various pieces
     virtual PieceType getType()                                    const = 0;
     virtual void display(ogstream* pgout)                         const = 0;
-    void getMoves(set <Move>& moves, const Board& board) const;
+    // ?? Make getMoves virtual so derived classes (King, Queen, etc.) can override
+    virtual void getMoves(set <Move>& moves, const Board& board) const;
 
 protected:
-
     int  nMoves;                    // how many times have you moved?
     bool fWhite;                    // which team are you on?
     Position position;              // current position of this piece
     int  lastMove;                  // last time this piece moved
 };
-
-
 
 /***************************************************
  * PIECE DERIVED
@@ -100,8 +97,6 @@ public:
     void display(ogstream* pgout)  const { assert(false); }
 };
 
-
-
 /***************************************************
  * PIECE DUMMY
  * The dummy double! - Everything returns FALSE
@@ -109,8 +104,6 @@ public:
 class PieceDummy : public Piece
 {
 public:
-
-    // constructors and stuff
     PieceDummy() : Piece(0, 0, true) {}
     PieceDummy(const Position& pos, bool isWhite = true) : Piece(pos, isWhite) {}
     PieceDummy(int c, int r, bool isWhite = true) : Piece(c, r, isWhite) {}
@@ -127,7 +120,6 @@ public:
         return *this;
     }
 
-    // getters
     bool operator == (char letter)  const { assert(false); return true; }
     bool operator != (char letter)  const { assert(false); return true; }
     bool isWhite()                  const { assert(false); return true; }
@@ -136,19 +128,17 @@ public:
     void decrementNMoves() { assert(false); }
     const Position& getPosition()  const { assert(false); return position; }
     bool justMoved(int currentMove) const { assert(false); return true; }
-
-    // setter
     void setLastMove(int currentMove) { assert(false); }
 
-    // overwritten by the various pieces
     PieceType getType()             const { assert(false); return SPACE; }
     void display(ogstream* pgout)  const { assert(false); }
+    // this satisfies the virtual getMoves() requirement
+    void getMoves(set<Move>&, const Board&) const override { assert(false); }
 };
 
 /***************************************************
- * PIECE SPY
- * A piece that is only counted.
- **************************************************/
+ * PIECE SPY, WHITE, BLACK
+ ***************************************************/
 class PieceSpy : public PieceDummy
 {
 public:
@@ -161,10 +151,7 @@ public:
     {
         numCopy++;
     }
-    ~PieceSpy()
-    {
-        numDelete++;
-    }
+    ~PieceSpy() { numDelete++; }
     const PieceSpy& operator = (const PieceSpy& rhs)
     {
         numAssign++;
@@ -173,15 +160,14 @@ public:
     const Piece& operator = (const Position& rhs)
     {
         numMove++;
-        nMoves++;                    // it moved one more time
-        position = rhs;              // actually change the position
-        return *this;                // return self
+        nMoves++;
+        position = rhs;
+        return *this;
     }
     void setLastMove(int currentMove) { lastMove = currentMove; }
     const Position& getPosition()  const { return position; }
     PieceType getType()            const { return pt; }
     bool isWhite()                 const { return fWhite; }
-
 
     static int numConstruct;
     static int numCopy;
@@ -197,11 +183,6 @@ private:
     PieceType pt;
 };
 
-
-/***************************************************
- * WHITE PIECE
- * Generic piece whose only allowable property is the color
- **************************************************/
 class White : public PieceDummy
 {
     PieceType pt;
@@ -210,7 +191,7 @@ public:
     White(PieceType pt) : PieceDummy(), pt(pt) {}
     bool isWhite() const { return true; }
     PieceType getType() const { return pt; }
-    void getMoves(set <Move>& moves, const Board& board) const {}
+    void getMoves(set<Move>& moves, const Board& board) const override {}
 };
 
 class Black : public PieceDummy
@@ -221,8 +202,5 @@ public:
     Black(PieceType pt) : PieceDummy(), pt(pt) {}
     bool isWhite() const { return false; }
     PieceType getType() const { return pt; }
-    void getMoves(set <Move>& moves, const Board& board) const {}
+    void getMoves(set<Move>& moves, const Board& board) const override {}
 };
-
-
-

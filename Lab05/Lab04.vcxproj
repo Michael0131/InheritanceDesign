@@ -103,8 +103,10 @@
     <ClCompile Include="move.cpp" />
     <ClCompile Include="piece.cpp" />
     <ClCompile Include="pieceBishop.cpp" />
+    <ClCompile Include="pieceKing.cpp" />
     <ClCompile Include="pieceKing.h" />
     <ClCompile Include="pieceKnight.cpp" />
+    <ClCompile Include="piecePawn.cpp" />
     <ClCompile Include="pieceQueen.cpp" />
     <ClCompile Include="pieceQueen.h" />
     <ClCompile Include="pieceRook.cpp" />

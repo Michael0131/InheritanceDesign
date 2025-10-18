@@ -8,12 +8,69 @@
  ************************************************************************/
 
 #include "testKing.h"
+#include "pieceKing.h"
 #include "pieceRook.h"
-#include "pieceKing.h"     
 #include "board.h"
 #include "uiDraw.h"
-#include <cassert>      
+#include <cassert>
+#include <set>
+using namespace std;
 
+/* ---------- Local test helpers ---------- */
+
+// Dummy piece (for blocking/capturing)
+class DummyPiece : public Piece
+{
+public:
+    DummyPiece(const Position& p, bool w, PieceType t = PAWN)
+        : Piece(p, w), t(t) {
+    }
+    PieceType getType() const override { return t; }
+    void display(ogstream*) const override {}
+    void getMoves(set<Move>&, const Board&) const override {}
+private:
+    PieceType t;
+};
+
+// helpers
+static bool hasSimple(const set<Move>& moves,
+    const Position& from,
+    const Position& to,
+    bool isWhite)
+{
+    Move m;
+    m.assignSimple(from, to);
+    m.setWhiteMove(isWhite);
+    return moves.count(m) == 1;
+}
+
+static bool hasCapture(const set<Move>& moves,
+    const Position& from,
+    const Position& to,
+    bool isWhite,
+    PieceType captured)
+{
+    Move m;
+    m.assignCapture(from, to, captured);
+    m.setWhiteMove(isWhite);
+    return moves.count(m) == 1;
+}
+
+static bool hasCastle(const set<Move>& moves,
+    const Position& from,
+    const Position& to,
+    bool isWhite,
+    bool isKingSide)
+{
+    Move m;
+    if (isKingSide)
+        m.assignCastleKing(from, to);
+    else
+        m.assignCastleQueen(from, to);
+
+    m.setWhiteMove(isWhite);
+    return moves.count(m) == 1;
+}
 
 /*************************************
  * +---a-b-c-d-e-f-g-h---+
@@ -31,7 +88,24 @@
  **************************************/
 void TestKing::getMoves_blocked()
 {
-   assertUnit(NOT_YET_IMPLEMENTED);
+    Board board(nullptr, true);
+    King king(Position("d5"), true);
+
+    const char* pos[] = { "c6","d6","e6","c5","e5","c4","d4","e4" };
+    for (const char* p : pos)
+        board.board[Position(p).getCol()][Position(p).getRow()] = new DummyPiece(Position(p), true, PAWN);
+
+    set<Move> moves;
+    king.getMoves(moves, board);
+
+    assertUnit(moves.empty());
+
+    for (const char* p : pos)
+    {
+        auto& cell = board.board[Position(p).getCol()][Position(p).getRow()];
+        delete cell;
+        cell = nullptr;
+    }
 }
 
 /*************************************
@@ -50,9 +124,27 @@ void TestKing::getMoves_blocked()
  **************************************/
 void TestKing::getMoves_capture()
 {
-   assertUnit(NOT_YET_IMPLEMENTED);
-}
+    Board board(nullptr, true);
+    King king(Position("d5"), true);
 
+    const char* pos[] = { "c6","d6","e6","c5","e5","c4","d4","e4" };
+    for (const char* p : pos)
+        board.board[Position(p).getCol()][Position(p).getRow()] = new DummyPiece(Position(p), false, PAWN);
+
+    set<Move> moves;
+    king.getMoves(moves, board);
+
+    assertUnit(moves.size() == 8);
+    for (const char* p : pos)
+        assertUnit(hasCapture(moves, Position("d5"), Position(p), true, PAWN));
+
+    for (const char* p : pos)
+    {
+        auto& cell = board.board[Position(p).getCol()][Position(p).getRow()];
+        delete cell;
+        cell = nullptr;
+    }
+}
 
 /*************************************
  * +---a-b-c-d-e-f-g-h---+
@@ -70,9 +162,17 @@ void TestKing::getMoves_capture()
  **************************************/
 void TestKing::getMoves_free()
 {
-   assertUnit(NOT_YET_IMPLEMENTED);
-}
+    Board board(nullptr, true);
+    King king(Position("d5"), true);
+    set<Move> moves;
 
+    king.getMoves(moves, board);
+
+    const char* pos[] = { "c6","d6","e6","c5","e5","c4","d4","e4" };
+    assertUnit(moves.size() == 8);
+    for (const char* p : pos)
+        assertUnit(hasSimple(moves, Position("d5"), Position(p), true));
+}
 
 /*************************************
  * +---a-b-c-d-e-f-g-h---+
@@ -90,9 +190,17 @@ void TestKing::getMoves_free()
  **************************************/
 void TestKing::getMoves_end()
 {
-   assertUnit(NOT_YET_IMPLEMENTED);
-}
+    Board board(nullptr, true);
+    King king(Position("b1"), true);
+    set<Move> moves;
 
+    king.getMoves(moves, board);
+
+    const char* valid[] = { "a1","a2","b2","c1","c2" };
+    assertUnit(moves.size() == 5);
+    for (const char* p : valid)
+        assertUnit(hasSimple(moves, Position("b1"), Position(p), true));
+}
 
 /*************************************
  * +---a-b-c-d-e-f-g-h---+
@@ -110,9 +218,23 @@ void TestKing::getMoves_end()
  **************************************/
 void TestKing::getMoves_whiteCastle()
 {
-   assertUnit(NOT_YET_IMPLEMENTED);
-}
+    Board board(nullptr, true);
+    King king(Position("e1"), true);
+    Rook leftR(Position("a1"), true);
+    Rook rightR(Position("h1"), true);
 
+    board.board[0][0] = &leftR;
+    board.board[7][0] = &rightR;
+
+    set<Move> moves;
+    king.getMoves(moves, board);
+
+    // King-side and queen-side castle
+    assertUnit(hasCastle(moves, Position("e1"), Position("g1"), true, true));
+    assertUnit(hasCastle(moves, Position("e1"), Position("c1"), true, false));
+
+    board.board[0][0] = board.board[7][0] = nullptr;
+}
 
 /*************************************
  * +---a-b-c-d-e-f-g-h---+
@@ -130,9 +252,22 @@ void TestKing::getMoves_whiteCastle()
  **************************************/
 void TestKing::getMoves_blackCastle()
 {
-   assertUnit(NOT_YET_IMPLEMENTED);
-}
+    Board board(nullptr, true);
+    King king(Position("e8"), false);
+    Rook leftR(Position("a8"), false);
+    Rook rightR(Position("h8"), false);
 
+    board.board[0][7] = &leftR;
+    board.board[7][7] = &rightR;
+
+    set<Move> moves;
+    king.getMoves(moves, board);
+
+    assertUnit(hasCastle(moves, Position("e8"), Position("g8"), false, true));
+    assertUnit(hasCastle(moves, Position("e8"), Position("c8"), false, false));
+
+    board.board[0][7] = board.board[7][7] = nullptr;
+}
 
 /*************************************
  * +---a-b-c-d-e-f-g-h---+
@@ -150,9 +285,23 @@ void TestKing::getMoves_blackCastle()
  **************************************/
 void TestKing::getMoves_whiteCastleKingMoved()
 {
-   assertUnit(NOT_YET_IMPLEMENTED);
-}
+    Board board(nullptr, true);
+    King king(Position("e1"), true);
+    king.setLastMove(1); // king already moved
+    Rook leftR(Position("a1"), true);
+    Rook rightR(Position("h1"), true);
 
+    board.board[0][0] = &leftR;
+    board.board[7][0] = &rightR;
+
+    set<Move> moves;
+    king.getMoves(moves, board);
+
+    assertUnit(!hasCastle(moves, Position("e1"), Position("g1"), true, true));
+    assertUnit(!hasCastle(moves, Position("e1"), Position("c1"), true, false));
+
+    board.board[0][0] = board.board[7][0] = nullptr;
+}
 
 /*************************************
  * +---a-b-c-d-e-f-g-h---+
@@ -170,7 +319,23 @@ void TestKing::getMoves_whiteCastleKingMoved()
  **************************************/
 void TestKing::getMoves_whiteCastleRookMoved()
 {
-   assertUnit(NOT_YET_IMPLEMENTED);
+    Board board(nullptr, true);
+    King king(Position("e1"), true);
+    Rook leftR(Position("a1"), true);
+    leftR.setLastMove(1);
+    Rook rightR(Position("h1"), true);
+    rightR.setLastMove(2);
+
+    board.board[0][0] = &leftR;
+    board.board[7][0] = &rightR;
+
+    set<Move> moves;
+    king.getMoves(moves, board);
+
+    assertUnit(!hasCastle(moves, Position("e1"), Position("g1"), true, true));
+    assertUnit(!hasCastle(moves, Position("e1"), Position("c1"), true, false));
+
+    board.board[0][0] = board.board[7][0] = nullptr;
 }
 
 /*************************************
@@ -180,7 +345,6 @@ void TestKing::getMoves_whiteCastleRookMoved()
  **************************************/
 void TestKing::getType()
 {
-   assertUnit(NOT_YET_IMPLEMENTED);
+    King k(Position("a1"), true);
+    assertUnit(k.getType() == KING);
 }
-
-

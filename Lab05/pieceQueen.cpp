@@ -4,87 +4,75 @@
  * Author:
  *    <your name here>
  * Summary:
- *    The queen class
+ *    The queen piece implementation
  ************************************************************************/
 
 #include "pieceQueen.h"
 #include "board.h"
 #include "uiDraw.h"
-#include <set>
-#include <iostream>
-using namespace std;
 
-/***************************************************
- * QUEEN : DISPLAY
- * Draw the queen on the board.
- ***************************************************/
+ /***************************************************
+  * QUEEN : DISPLAY
+  * Draw the queen on the board.
+  ***************************************************/
 void Queen::display(ogstream* pgout) const
 {
-    // ask the drawing system to render this piece
     pgout->drawQueen(position, !isWhite());
 }
 
 /***************************************************
  * QUEEN : GET MOVES
- * Generate all legal moves (rook + bishop style)
+ * Return all possible moves for the queen.
  ***************************************************/
 void Queen::getMoves(set<Move>& moves, const Board& board) const
 {
-    // All 8 possible direction vectors for a queen
-    static const int DIRECTIONS[8][2] = {
-       { 1, 0 },   // right
-       { -1, 0 },  // left
-       { 0, 1 },   // up
-       { 0, -1 },  // down
-       { 1, 1 },   // up-right
-       { -1, 1 },  // up-left
-       { 1, -1 },  // down-right
-       { -1, -1 }  // down-left
+    // Directions (8): rook + bishop
+    static const int DIRECTIONS[8][2] =
+    {
+        {  1,  0 },  // right
+        { -1,  0 },  // left
+        {  0,  1 },  // up
+        {  0, -1 },  // down
+        {  1,  1 },  // up-right
+        { -1,  1 },  // up-left
+        {  1, -1 },  // down-right
+        { -1, -1 }   // down-left
     };
 
     int c0 = position.getCol();
     int r0 = position.getRow();
 
-    // Explore all 8 directions
-    for (int i = 0; i < 8; ++i)
+    // Scan each direction until blocked
+    for (auto& dir : DIRECTIONS)
     {
-        int dc = DIRECTIONS[i][0];
-        int dr = DIRECTIONS[i][1];
-        int c = c0 + dc;
-        int r = r0 + dr;
+        int c = c0 + dir[0];
+        int r = r0 + dir[1];
 
-        // Continue sliding until blocked or off board
         while (Position(c, r).isValid())
         {
             Position dest(c, r);
-            const Piece& target = board[dest.getLocation()];
+            const Piece& target = board[dest];
 
-            // Stop if it's a friendly piece
+            // same color piece = stop
             if (target.getType() != SPACE && target.isWhite() == fWhite)
                 break;
 
             Move m;
-
             if (target.getType() == SPACE)
-            {
-                // simple move
                 m.assignSimple(position, dest);
-            }
             else
             {
-                // capture move
                 m.assignCapture(position, dest, target.getType());
-                m.setWhiteMove(fWhite);
                 moves.insert(m);
-                break;  // can't move past capture
+                break; // stop after capture
             }
 
             m.setWhiteMove(fWhite);
             moves.insert(m);
 
-            // Continue in same direction
-            c += dc;
-            r += dr;
+            // advance further in this direction
+            c += dir[0];
+            r += dir[1];
         }
     }
 }

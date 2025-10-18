@@ -1,6 +1,4 @@
-﻿  pieceQueen.cpp
-  pieceQueen.h
-  testQueen.cpp
-  Generating Code...
+﻿  testPawn.cpp
+Lab04\x64\Debug\pieceKing.obj : warning LNK4042: object specified more than once; extras ignored
 Lab04\x64\Debug\pieceQueen.obj : warning LNK4042: object specified more than once; extras ignored
   Lab04.vcxproj -> C:\Users\Michael J\source\repos\InheritanceDesign3333333333\Lab05\x64\Debug\Lab04.exe
