@@ -7,6 +7,8 @@
  *    A collection of pieces and a small amount of game state
  ************************************************************************/
 
+#include <set>            // for STD::SET
+
 #include "board.h"
 #include "uiDraw.h"
 #include "position.h"
@@ -112,22 +114,40 @@ void Board::display(const Position& posHover, const Position& posSelect) const
     // draw the base chessboard
     pgout->drawBoard();
 
+
+    // Optionally highlight selection / hover
+    if (posHover.isValid())
+       pgout->drawHover(posHover); // outline
+
+    if (posSelect.isValid())
+    {
+       const Piece* pSelected = board[posSelect.getCol()][posSelect.getRow()];
+
+       if (pSelected && pSelected->getType() != SPACE)
+       {
+          // Highlight selected square
+          pgout->drawSelected(posSelect); // solid red square
+
+          // Draw possible moves for this piece
+          std::set<Move> moves;
+          pSelected->getMoves(moves, *this);
+          for (const Move& m : moves)
+          {
+             pgout->drawPossible(m.getDest());
+          }
+       }
+
+    }
+    
     // Draw all pieces on the board if they exist
     for (int r = 0; r < 8; ++r)
     {
-        for (int c = 0; c < 8; ++c)
-        {
-            if (board[c][r])
-                board[c][r]->display(pgout);
-        }
+       for (int c = 0; c < 8; ++c)
+       {
+          if (board[c][r])
+             board[c][r]->display(pgout);
+       }
     }
-
-    // Optionally highlight selection / hover
-    if (posSelect.isValid())
-        pgout->drawSelected(posSelect);
-
-    if (posHover.isValid())
-        pgout->drawHover(posHover);
 }
 
 

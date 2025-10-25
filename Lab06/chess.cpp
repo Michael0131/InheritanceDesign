@@ -35,6 +35,33 @@ void callBack(Interface *pUI, void * p)
    // is the first step of every single callback function in OpenGL. 
    Board * pBoard = (Board *)p;  
    pBoard->display(pUI->getHoverPosition(), pUI->getSelectPosition());
+
+   // Get selected and previous positions
+   Position posSelect = pUI->getSelectPosition();
+   Position posPrevious = pUI->getPreviousPosition();
+
+
+   if (posSelect.isValid() && posPrevious.isValid() && posSelect != posPrevious)
+   {
+      const Piece& piece = (*pBoard)[posPrevious];
+
+      if (piece.getType() != SPACE && piece.isWhite() == pBoard->whiteTurn())
+      {
+         std::set<Move> moves;
+         piece.getMoves(moves, *pBoard);
+
+         for (const Move& m : moves)
+         {
+            if (m.getDest() == posSelect)
+            {
+               pBoard->move(m);
+               break;
+            }
+         }
+      }
+
+      pUI->clearSelectPosition();
+   }
 }
 
 
