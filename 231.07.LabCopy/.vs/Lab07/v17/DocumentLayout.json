@@ -1,7 +1,28 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jamga\\Documents\\231.07.LabCopy\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\jamga\\Documents\\231.07.Lab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\jamga\\Documents\\231.07.Lab\\Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\jamga\\Documents\\231.07.Lab\\position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\jamga\\Documents\\231.07.Lab\\satellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:satellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\jamga\\Documents\\231.07.Lab\\position.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:position.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\jamga\\Documents\\231.07.Lab\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +30,76 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lab07.cpp",
+              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\231.07.Lab\\Lab07.cpp",
+              "RelativeDocumentMoniker": "Lab07.cpp",
+              "ToolTip": "C:\\Users\\jamga\\Documents\\231.07.Lab\\Lab07.cpp",
+              "RelativeToolTip": "Lab07.cpp",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAGIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-15T07:13:34.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "satellite.h",
+              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\231.07.Lab\\satellite.h",
+              "RelativeDocumentMoniker": "satellite.h",
+              "ToolTip": "C:\\Users\\jamga\\Documents\\231.07.Lab\\satellite.h",
+              "RelativeToolTip": "satellite.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-15T07:17:58.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "position.cpp",
+              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\231.07.Lab\\position.cpp",
+              "RelativeDocumentMoniker": "position.cpp",
+              "ToolTip": "C:\\Users\\jamga\\Documents\\231.07.Lab\\position.cpp",
+              "RelativeToolTip": "position.cpp",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAABkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-15T07:12:18.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "position.h",
+              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\231.07.Lab\\position.h",
+              "RelativeDocumentMoniker": "position.h",
+              "ToolTip": "C:\\Users\\jamga\\Documents\\231.07.Lab\\position.h",
+              "RelativeToolTip": "position.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-11-15T07:12:10.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\jamga\\Documents\\231.07.Lab\\packages.config",
+              "RelativeDocumentMoniker": "packages.config",
+              "ToolTip": "C:\\Users\\jamga\\Documents\\231.07.Lab\\packages.config",
+              "RelativeToolTip": "packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-15T06:55:03.058Z",
+              "EditorCaption": ""
             }
           ]
         }
