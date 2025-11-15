@@ -6,36 +6,54 @@
 
 void Satellite::updatePhysics(double dt)
 {
-   if (!alive) return;
+    if (!alive)
+        return;
 
-   // update acceleration from the gravity at our current position
-   double ddx = 0.0;
-   double ddy = 0.0;
+    Physics physics;
 
-   Physics p;
-   p.computeAcceleration(pos, ddx, ddy);
+    // Get current position
+    double x = pos.getMetersX();
+    double y = pos.getMetersY();
 
-   // get current position and velocity  
-   double x = pos.getMetersX();
-   double y = pos.getMetersY();
-   double dx = v.getDX();
-   double dy = v.getDY();
+    // Check collision BEFORE moving
+    double h = physics.computeHeight(pos);
+    if (h <= 0)
+    {
+        alive = false;
+        return;
+    }
 
-   // update position
-   x += dx * dt + 0.5 * ddx * dt * dt; // distance formula
-   y += dy * dt + 0.5 * ddy * dt * dt; // distance formula
-   pos.setMetersX(x);
-   pos.setMetersY(y);
+    // Compute acceleration (gravity)
+    double ddx = 0.0;
+    double ddy = 0.0;
+    physics.computeAcceleration(pos, ddx, ddy);
 
-   // update velocity
-   dx += ddx * dt;
-   dy += ddy * dt;
-   v.setDX(dx);
-   v.setDY(dy);
+    // Get velocity
+    double dx = v.getDX();
+    double dy = v.getDY();
 
-   pos.setMetersX(x);
+    // Update position (x = x + v*t + 1/2 a t²)
+    x += dx * dt + 0.5 * ddx * dt * dt;
+    y += dy * dt + 0.5 * ddy * dt * dt;
 
-};
+    pos.setMetersX(x);
+    pos.setMetersY(y);
+
+    // Update velocity (v = v + a*t)
+    dx += ddx * dt;
+    dy += ddy * dt;
+
+    v.setDX(dx);
+    v.setDY(dy);
+
+    // Check collision AFTER moving
+    h = physics.computeHeight(pos);
+    if (h <= 0)
+    {
+        alive = false;
+    }
+}
+
 
 
 void Satellite::draw(ogstream& /*gout*/)
