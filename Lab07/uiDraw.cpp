@@ -30,7 +30,7 @@
 #ifdef _WIN32
 #include <stdio.h>
 #include <stdlib.h>
-#include <GL/glut.h>         // OpenGL library we copied 
+//#include <GL/glut.h>         // OpenGL library we copied 
 #define _USE_MATH_DEFINES
 #include <math.h>
 #endif // _WIN32
@@ -41,16 +41,16 @@
 using namespace std;
 
 // colors ueed in the simulator
-const int RGB_WHITE[] =      { 255, 255, 255 };
+const int RGB_WHITE[] = { 255, 255, 255 };
 const int RGB_LIGHT_GREY[] = { 196, 196, 196 };
-const int RGB_GREY[] =       { 128, 128, 128 };
-const int RGB_DARK_GREY[] =  { 64,   64,  64 };
-const int RGB_DEEP_BLUE[] =  { 64,   64, 156 };
-const int RGB_BLUE[] =       { 0,     0, 256 };
-const int RGB_RED[] =        { 255,   0,   0 };
-const int RGB_GOLD[] =       { 255, 255,   0 };
-const int RGB_TAN[] =        { 180, 150, 110 };
-const int RGB_GREEN[] =      {   0, 150,   0 };
+const int RGB_GREY[] = { 128, 128, 128 };
+const int RGB_DARK_GREY[] = { 64,   64,  64 };
+const int RGB_DEEP_BLUE[] = { 64,   64, 156 };
+const int RGB_BLUE[] = { 0,     0, 256 };
+const int RGB_RED[] = { 255,   0,   0 };
+const int RGB_GOLD[] = { 255, 255,   0 };
+const int RGB_TAN[] = { 180, 150, 110 };
+const int RGB_GREEN[] = { 0, 150,   0 };
 
 /************************************************************************
  * ROTATE
@@ -84,11 +84,11 @@ Position rotate(const Position& origin, double x, double y, double rotation)
 inline void glResetColor()
 {
    glColor3f((GLfloat)1.0 /* red % */, (GLfloat)1.0 /* green % */, (GLfloat)1.0 /* blue % */);
-}   
+}
 
 /************************************************************
  * COLOR RECTANGLE
- * A structure used to conveniently specify a rectangle 
+ * A structure used to conveniently specify a rectangle
  * of a certain color
  ************************************************************/
 struct ColorRect
@@ -112,15 +112,15 @@ struct ColorRect
 void glColor(const int* rgb)
 {
    glColor3f((GLfloat)(rgb[0] / 256.0),
-             (GLfloat)(rgb[1] / 256.0),
-             (GLfloat)(rgb[2] / 256.0));
+      (GLfloat)(rgb[1] / 256.0),
+      (GLfloat)(rgb[2] / 256.0));
 }
 
 /*************************************************************************
  * GL VERTEXT POINT
  * Just a more convenient format of glVertext2f
  *************************************************************************/
-inline void glVertexPoint(const Position & point)
+inline void glVertexPoint(const Position& point)
 {
    glVertex2f((GLfloat)point.getPixelsX(), (GLfloat)point.getPixelsY());
 }
@@ -129,27 +129,27 @@ inline void glVertexPoint(const Position & point)
  * GL DRAW RECT
  * Draw a colored rectangle
  *************************************************************************/
-void glDrawRect(const Position & center, const Position & offset,
-                const ColorRect & rect, double rotation)
+void glDrawRect(const Position& center, const Position& offset,
+   const ColorRect& rect, double rotation)
 {
    glBegin(GL_QUADS);
    glColor(rect.rgb);
    glVertexPoint(rotate(center,
-                        rect.x0 + offset.getPixelsX(),
-                        rect.y0 + offset.getPixelsY(),
-                        rotation));
+      rect.x0 + offset.getPixelsX(),
+      rect.y0 + offset.getPixelsY(),
+      rotation));
    glVertexPoint(rotate(center,
-                        rect.x1 + offset.getPixelsX(),
-                        rect.y1 + offset.getPixelsY(),
-                        rotation));
+      rect.x1 + offset.getPixelsX(),
+      rect.y1 + offset.getPixelsY(),
+      rotation));
    glVertexPoint(rotate(center,
-                        rect.x2 + offset.getPixelsX(),
-                        rect.y2 + offset.getPixelsY(),
-                        rotation));
+      rect.x2 + offset.getPixelsX(),
+      rect.y2 + offset.getPixelsY(),
+      rotation));
    glVertexPoint(rotate(center,
-                        rect.x3 + offset.getPixelsX(),
-                        rect.y3 + offset.getPixelsY(),
-                        rotation));
+      rect.x3 + offset.getPixelsX(),
+      rect.y3 + offset.getPixelsY(),
+      rotation));
    glEnd();
 }
 
@@ -165,7 +165,7 @@ void drawText(const Position& topLeft, const char* text)
 
    // prepare to draw the text from the top-left corner
    glRasterPos2f((GLfloat)topLeft.getPixelsX(),
-                 (GLfloat)topLeft.getPixelsY());
+      (GLfloat)topLeft.getPixelsY());
 
    // loop through the text
    for (const char* p = text; *p; p++)
@@ -175,7 +175,7 @@ void drawText(const Position& topLeft, const char* text)
 /*************************************************************************
  * DISPLAY the results on the screen
  *************************************************************************/
-void ogstream :: flush()
+void ogstream::flush()
 {
    string sOut;
    string sIn = str();
@@ -189,7 +189,7 @@ void ogstream :: flush()
          sOut.clear();
          pt.addPixelsY(-18);
       }
-      // othewise append
+   // othewise append
       else
          sOut += *it;
 
@@ -199,7 +199,7 @@ void ogstream :: flush()
       drawText(pt, sOut.c_str());
       pt.addPixelsY(-18);
    }
-   
+
    // reset the buffer
    str("");
 }
@@ -245,7 +245,7 @@ void ogstream::drawFragment(const Position& center, double rotation)
  *************************************************************************/
 void ogstream::drawCrewDragonCenter(const Position& center, double rotation)
 {
-   ColorRect rects[] = 
+   ColorRect rects[] =
    {
       {-5,5,   3,5,   3,-5,  -5,-5,  RGB_LIGHT_GREY },
       { 3,5,   3,-5, 11,-3,  11,3,   RGB_GREY },
@@ -253,7 +253,7 @@ void ogstream::drawCrewDragonCenter(const Position& center, double rotation)
       { 4,3,   7,2,   7,-2,   4,-3,  RGB_DARK_GREY}
    };
 
-   for (int i = 0; i < sizeof(rects)/sizeof(ColorRect); i++)
+   for (int i = 0; i < sizeof(rects) / sizeof(ColorRect); i++)
       glDrawRect(center, Position(), rects[i], rotation);
 }
 
@@ -313,12 +313,12 @@ void ogstream::drawCrewDragon(const Position& center, double rotation)
    Position posRight;
    posRight.setPixelsX(-1.0);
    posRight.setPixelsY(11.0);
-   drawCrewDragonRight( center, rotation, posRight);
-   
+   drawCrewDragonRight(center, rotation, posRight);
+
    Position posLeft;
    posLeft.setPixelsX(-1.0);
    posLeft.setPixelsY(-11.0);
-   drawCrewDragonLeft(  center, rotation, posLeft);
+   drawCrewDragonLeft(center, rotation, posLeft);
 }
 
 /************************************************************************
@@ -344,16 +344,16 @@ void ogstream::drawSputnik(const Position& center, double rotation)
    // draw the antenna
    glBegin(GL_LINES);
    glColor(RGB_WHITE);
-   glVertexPoint(rotate(center,  -6.0,   2.0, rotation));
+   glVertexPoint(rotate(center, -6.0, 2.0, rotation));
    glVertexPoint(rotate(center, -10.0, -15.0, rotation));
 
-   glVertexPoint(rotate(center,  0.0,   1.0, rotation));
+   glVertexPoint(rotate(center, 0.0, 1.0, rotation));
    glVertexPoint(rotate(center, -2.5, -15.0, rotation));
 
-   glVertexPoint(rotate(center,  2.0, -6.0, rotation));
-   glVertexPoint(rotate(center,  2.5, -15.0, rotation));
+   glVertexPoint(rotate(center, 2.0, -6.0, rotation));
+   glVertexPoint(rotate(center, 2.5, -15.0, rotation));
 
-   glVertexPoint(rotate(center,  6.0,  2.0, rotation));
+   glVertexPoint(rotate(center, 6.0, 2.0, rotation));
    glVertexPoint(rotate(center, 10.0, -15.0, rotation));
    glEnd();
 }
@@ -383,17 +383,17 @@ void ogstream::drawGPSLeft(const Position& center, double rotation, const Positi
    glBegin(GL_LINE_STRIP);
    glColor(RGB_WHITE);
    glVertexPoint(rotate(center,
-                        3.0 + offset.getPixelsX(),
-                        4.0 + offset.getPixelsY(),
-                        rotation));
+      3.0 + offset.getPixelsX(),
+      4.0 + offset.getPixelsY(),
+      rotation));
    glVertexPoint(rotate(center,
-                        0.0 + offset.getPixelsX(),
-                        8.0 + offset.getPixelsY(),
-                        rotation));
+      0.0 + offset.getPixelsX(),
+      8.0 + offset.getPixelsY(),
+      rotation));
    glVertexPoint(rotate(center,
-                        -3.0 + offset.getPixelsX(),
-                        4.0 + offset.getPixelsY(),
-                        rotation));
+      -3.0 + offset.getPixelsX(),
+      4.0 + offset.getPixelsY(),
+      rotation));
    glEnd();
 }
 
@@ -422,17 +422,17 @@ void ogstream::drawGPSRight(const Position& center, double rotation, const Posit
    glBegin(GL_LINE_STRIP);
    glColor(RGB_WHITE);
    glVertexPoint(rotate(center,
-                        3.0 + offset.getPixelsX(),
-                        -4.0 + offset.getPixelsY(),
-                        rotation));
+      3.0 + offset.getPixelsX(),
+      -4.0 + offset.getPixelsY(),
+      rotation));
    glVertexPoint(rotate(center,
-                        0.0 + offset.getPixelsX(),
-                        -8.0 + offset.getPixelsY(),
-                        rotation));
+      0.0 + offset.getPixelsX(),
+      -8.0 + offset.getPixelsY(),
+      rotation));
    glVertexPoint(rotate(center,
-                        -3.0 + offset.getPixelsX(),
-                        -4.0 + offset.getPixelsY(),
-                        rotation));
+      -3.0 + offset.getPixelsX(),
+      -4.0 + offset.getPixelsY(),
+      rotation));
    glEnd();
 
 }
@@ -466,16 +466,16 @@ void ogstream::drawGPSCenter(const Position& center, double rotation)
 void ogstream::drawGPS(const Position& center, double rotation)
 {
    drawGPSCenter(center, rotation);
-   
+
    Position posRight;
    posRight.setPixelsX(0.0);
    posRight.setPixelsY(12.0);
    drawGPSRight(center, rotation, posRight);
-   
+
    Position posLeft;
    posLeft.setPixelsX(0.0);
    posLeft.setPixelsY(-12.0);
-   drawGPSLeft(center,  rotation, posLeft);
+   drawGPSLeft(center, rotation, posLeft);
 }
 
 /************************************************************************
@@ -545,13 +545,13 @@ void ogstream::drawHubbleLeft(const Position& center, double rotation, const Pos
    glBegin(GL_LINE_STRIP);
    glColor(RGB_WHITE);
    glVertexPoint(rotate(center,
-                        0.0 + offset.getPixelsX(),
-                        3.0 + offset.getPixelsY(),
-                        rotation));
+      0.0 + offset.getPixelsX(),
+      3.0 + offset.getPixelsY(),
+      rotation));
    glVertexPoint(rotate(center,
-                        0.0 + offset.getPixelsX(),
-                        -5.0 + offset.getPixelsY(),
-                        rotation));
+      0.0 + offset.getPixelsX(),
+      -5.0 + offset.getPixelsY(),
+      rotation));
    glEnd();
 }
 
@@ -580,13 +580,13 @@ void ogstream::drawHubbleRight(const Position& center, double rotation, const Po
    glBegin(GL_LINE_STRIP);
    glColor(RGB_WHITE);
    glVertexPoint(rotate(center,
-                        0.0 + offset.getPixelsX(),
-                        -3.0 + offset.getPixelsY(),
-                        rotation));
+      0.0 + offset.getPixelsX(),
+      -3.0 + offset.getPixelsY(),
+      rotation));
    glVertexPoint(rotate(center,
-                        0.0 + offset.getPixelsX(),
-                        5.0 + offset.getPixelsY(),
-                        rotation));
+      0.0 + offset.getPixelsX(),
+      5.0 + offset.getPixelsY(),
+      rotation));
    glEnd();
 }
 
@@ -606,17 +606,17 @@ void ogstream::drawHubble(const Position& center, double rotation)
    Position posComputer;
    posComputer.setPixelsX(-10.0);
    posComputer.setPixelsY(0.0);
-   drawHubbleComputer(center,  rotation, posComputer);
-   
+   drawHubbleComputer(center, rotation, posComputer);
+
    Position posRight;
    posRight.setPixelsX(1.0);
    posRight.setPixelsY(-8.0);
-   drawHubbleRight(center,     rotation, posRight);
+   drawHubbleRight(center, rotation, posRight);
 
    Position posLeft;
    posLeft.setPixelsX(1.0);
    posLeft.setPixelsY(8.0);
-   drawHubbleLeft(center,      rotation, posLeft);
+   drawHubbleLeft(center, rotation, posLeft);
 }
 
 /************************************************************************
@@ -671,7 +671,7 @@ void ogstream::drawStarlink(const Position& center, double rotation)
    Position posBody;
    posBody.setPixelsX(-1.0);
    posBody.setPixelsY(0.0);
-   drawStarlinkBody(center,  rotation, posBody);
+   drawStarlinkBody(center, rotation, posBody);
 
    Position posArray;
    posArray.setPixelsX(8.0);
@@ -692,7 +692,7 @@ void ogstream::drawShip(const Position& center, double rotation, bool thrust)
 {
    // draw the white part of the ship                                               
    const PT pointsShipWhite[] =
-   { 
+   {
       {0,0},
       {-3,-9}, {-12,-12}, {-14,-12}, {-13,-7}, {-8,-2}, {-6,3}, {-4,11}, {-4,14}, {-3,16}, {-1,18},
       {1,18}, {3,16}, {4,14}, {4,11}, {6,3}, {8,-2}, {13,-7}, {14,-12}, {12,-12}, {3,-9}, {-3,-9}
@@ -731,8 +731,8 @@ void ogstream::drawShip(const Position& center, double rotation, bool thrust)
    glColor(RGB_DEEP_BLUE);
    for (int iRectangle = 0; iRectangle < 4; iRectangle++)
       for (int iVertex = 0; iVertex < 4; iVertex++)
-      glVertexPoint(rotate(center, pointsShipBlack[iRectangle][iVertex].x, 
-                                   pointsShipBlack[iRectangle][iVertex].y, rotation));
+         glVertexPoint(rotate(center, pointsShipBlack[iRectangle][iVertex].x,
+            pointsShipBlack[iRectangle][iVertex].y, rotation));
    glResetColor();
    glEnd();
 }
@@ -745,7 +745,7 @@ void ogstream::drawShip(const Position& center, double rotation, bool thrust)
  *************************************************************************/
 void ogstream::drawEarth(const Position& center, double rotation)
 {
-   const int * colors[5] = 
+   const int* colors[5] =
    {
       RGB_GREY,  // 0
       RGB_BLUE,  // 1
@@ -824,19 +824,19 @@ void ogstream::drawEarth(const Position& center, double rotation)
          if (earth[y][x])
          {
             assert(earth[y][x] > 0 && earth[y][x] <= 4);
-            ColorRect rect = 
+            ColorRect rect =
             {
                static_cast<int>(x * SCALE),
                static_cast<int>(y * SCALE),
-               
+
                static_cast<int>(x * SCALE),
                static_cast<int>(y * SCALE + SCALE),
-               
+
                static_cast<int>(x * SCALE + SCALE),
                static_cast<int>(y * SCALE + SCALE),
-               
+
                static_cast<int>(x * SCALE + SCALE),
-               static_cast<int>(y * SCALE), colors[earth[y][x]]};
+               static_cast<int>(y * SCALE), colors[earth[y][x]] };
             Position pos;
             pos.setPixelsX(-25.0 * SCALE);
             pos.setPixelsY(-25.0 * SCALE);
@@ -935,35 +935,35 @@ void ogstreamDummy::drawStar(const Position& point, unsigned char phase) { asser
 /******************************************************************
  * FAKE
  ****************************************************************/
-void ogstreamFake::flush()                                  { assert(false); }
-void ogstreamFake::setPosition(const Position& pt)          { assert(false); }
+void ogstreamFake::flush() { assert(false); }
+void ogstreamFake::setPosition(const Position& pt) { assert(false); }
 ogstreamFake& ogstreamFake::operator = (const Position& pt) { assert(false); return *this; }
-void ogstreamFake::drawFragment(        const Position& center, double rotation                        ) { *this << "Fragment"         << center << rotation << "\n";}
-void ogstreamFake::drawProjectile(      const Position& center                                         ) { *this << "Projectile"       << center <<             "\n"; }
-void ogstreamFake::drawCrewDragon(      const Position& center, double rotation                        ) { *this << "CrewDragon"       << center << rotation << "\n";}
-void ogstreamFake::drawCrewDragonRight( const Position& center, double rotation, const Position& offset) { *this << "CrewDragonRight"  << center << rotation << "\n"; }
-void ogstreamFake::drawCrewDragonLeft(  const Position& center, double rotation, const Position& offset) { *this << "CrewDragonLeft "  << center << rotation << "\n"; }
-void ogstreamFake::drawCrewDragonCenter(const Position& center, double rotation                        ) { *this << "CrewDragonCenter" << center << rotation << "\n"; }
-void ogstreamFake::drawSputnik(         const Position& center, double rotation                        ) { *this << "Sputnik"          << center << rotation << "\n"; }
-void ogstreamFake::drawGPS(             const Position& center, double rotation                        ) { *this << "GPS"              << center << rotation << "\n"; }
-void ogstreamFake::drawGPSCenter(       const Position& center, double rotation                        ) { *this << "GPSCenter"        << center << rotation << "\n"; }
-void ogstreamFake::drawGPSRight(        const Position& center, double rotation, const Position& offset) { *this << "GPSRight"         << center << rotation << "\n"; }
-void ogstreamFake::drawGPSLeft(         const Position& center, double rotation, const Position& offset) { *this << "GPSLeft"          << center << rotation << "\n"; }
-void ogstreamFake::drawHubble(          const Position& center, double rotation                        ) { *this << "Hubble"           << center << rotation << "\n"; }
-void ogstreamFake::drawHubbleComputer(  const Position& center, double rotation, const Position& offset) { *this << "HubbleComputer"   << center << rotation << "\n"; }
-void ogstreamFake::drawHubbleTelescope( const Position& center, double rotation, const Position& offset) { *this << "HubbleTelescope"  << center << rotation << "\n"; }
-void ogstreamFake::drawHubbleLeft(      const Position& center, double rotation, const Position& offset) { *this << "HubbleLeft"       << center << rotation << "\n"; }
-void ogstreamFake::drawHubbleRight(     const Position& center, double rotation, const Position& offset) { *this << "HubbleRight"      << center << rotation << "\n"; }
-void ogstreamFake::drawStarlink(        const Position& center, double rotation                        ) { *this << "Starlink"         << center << rotation << "\n"; }
-void ogstreamFake::drawStarlinkBody(    const Position& center, double rotation, const Position& offset) { *this << "StarlinkBody"     << center << rotation << "\n"; }
-void ogstreamFake::drawStarlinkArray(   const Position& center, double rotation, const Position& offset) { *this << "StarlinkArray"    << center << rotation << "\n"; }
-void ogstreamFake::drawShip(            const Position& center, double rotation, bool thrust           ) { *this << "Ship"             << center << rotation << "\n"; }
-void ogstreamFake::drawEarth(           const Position& center, double rotation                        ) { *this << "Earth"            << center << rotation << "\n"; }
-void ogstreamFake::drawStar(            const Position& center, unsigned char phase                    ) { *this << "Star"             << center << phase    << "\n"; }
+void ogstreamFake::drawFragment(const Position& center, double rotation) { *this << "Fragment" << center << rotation << "\n"; }
+void ogstreamFake::drawProjectile(const Position& center) { *this << "Projectile" << center << "\n"; }
+void ogstreamFake::drawCrewDragon(const Position& center, double rotation) { *this << "CrewDragon" << center << rotation << "\n"; }
+void ogstreamFake::drawCrewDragonRight(const Position& center, double rotation, const Position& offset) { *this << "CrewDragonRight" << center << rotation << "\n"; }
+void ogstreamFake::drawCrewDragonLeft(const Position& center, double rotation, const Position& offset) { *this << "CrewDragonLeft " << center << rotation << "\n"; }
+void ogstreamFake::drawCrewDragonCenter(const Position& center, double rotation) { *this << "CrewDragonCenter" << center << rotation << "\n"; }
+void ogstreamFake::drawSputnik(const Position& center, double rotation) { *this << "Sputnik" << center << rotation << "\n"; }
+void ogstreamFake::drawGPS(const Position& center, double rotation) { *this << "GPS" << center << rotation << "\n"; }
+void ogstreamFake::drawGPSCenter(const Position& center, double rotation) { *this << "GPSCenter" << center << rotation << "\n"; }
+void ogstreamFake::drawGPSRight(const Position& center, double rotation, const Position& offset) { *this << "GPSRight" << center << rotation << "\n"; }
+void ogstreamFake::drawGPSLeft(const Position& center, double rotation, const Position& offset) { *this << "GPSLeft" << center << rotation << "\n"; }
+void ogstreamFake::drawHubble(const Position& center, double rotation) { *this << "Hubble" << center << rotation << "\n"; }
+void ogstreamFake::drawHubbleComputer(const Position& center, double rotation, const Position& offset) { *this << "HubbleComputer" << center << rotation << "\n"; }
+void ogstreamFake::drawHubbleTelescope(const Position& center, double rotation, const Position& offset) { *this << "HubbleTelescope" << center << rotation << "\n"; }
+void ogstreamFake::drawHubbleLeft(const Position& center, double rotation, const Position& offset) { *this << "HubbleLeft" << center << rotation << "\n"; }
+void ogstreamFake::drawHubbleRight(const Position& center, double rotation, const Position& offset) { *this << "HubbleRight" << center << rotation << "\n"; }
+void ogstreamFake::drawStarlink(const Position& center, double rotation) { *this << "Starlink" << center << rotation << "\n"; }
+void ogstreamFake::drawStarlinkBody(const Position& center, double rotation, const Position& offset) { *this << "StarlinkBody" << center << rotation << "\n"; }
+void ogstreamFake::drawStarlinkArray(const Position& center, double rotation, const Position& offset) { *this << "StarlinkArray" << center << rotation << "\n"; }
+void ogstreamFake::drawShip(const Position& center, double rotation, bool thrust) { *this << "Ship" << center << rotation << "\n"; }
+void ogstreamFake::drawEarth(const Position& center, double rotation) { *this << "Earth" << center << rotation << "\n"; }
+void ogstreamFake::drawStar(const Position& center, unsigned char phase) { *this << "Star" << center << phase << "\n"; }
 
 /******************************************************************
  * RANDOM
- * This function generates a random number.  
+ * This function generates a random number.
  *
  *    INPUT:   min, max : The number of values (min <= num <= max)
  *    OUTPUT   <return> : Return the integer
@@ -979,7 +979,7 @@ int random(int min, int max)
 
 /******************************************************************
  * RANDOM
- * This function generates a random number.  
+ * This function generates a random number.
  *
  *    INPUT:   min, max : The number of values (min <= num <= max)
  *    OUTPUT   <return> : Return the double
@@ -988,7 +988,7 @@ double random(double min, double max)
 {
    assert(min <= max);
    double num = min + ((double)rand() / (double)RAND_MAX * (max - min));
-   
+
    assert(min <= num && num <= max);
 
    return num;

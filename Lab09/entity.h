@@ -38,7 +38,7 @@ public:
 
 
    // Additional Methods
-   void update(double dt);
+   virtual void update(double dt);
 
    virtual void draw(ogstream& gout);
 

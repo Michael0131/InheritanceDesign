@@ -17,7 +17,7 @@ public:
 
 
    // Methods
-   virtual void draw(ogstream& gout);
+   virtual void draw(ogstream& gout) override;
    void updatePhysics(double dt);
 
 };

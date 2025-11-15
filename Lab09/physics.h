@@ -15,7 +15,7 @@ public:
    double computeHeight(const Position& pos);
    double computeGravity(double h);
    double computeGravityAngle(const Position& pos);
-   double computeAcceleration(const Position& pos, double& ddx, double& ddy);
+   void computeAcceleration(const Position& pos, double& ddx, double& ddy);
 
 
 };

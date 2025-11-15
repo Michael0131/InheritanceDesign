@@ -1,6 +1,6 @@
 /*************************************************************
  * 1. Name:
- *      Demo
+ *      Simulator
  * 2. Assignment Name:
  *      Lab 07: Orbit Simulator
  * 3. Assignment Description:
@@ -23,25 +23,19 @@ using namespace std;
 #include "satellite.h"
 
 
+/***********************************************
+ * CONSTANTS FOR ORBIT SIMULATION
+ ***********************************************/
 
+const double HOURS_PER_DAY = 24.0;      // hours in a day
+const double MINUTES_PER_HOUR = 60.0;      // minutes in an hour
+const double FRAMES_PER_SECOND = 30.0;      // 30 FPS simulation rate
 
+// Time dilation: sim runs 1440x faster than real time
+const double TIME_DILATION = HOURS_PER_DAY * MINUTES_PER_HOUR; // 24 * 60 = 1440
 
-
-
-
-
-
-//bool checkCollison(Satellite& s)
-//{
-//   double h = computeHeight(s.x, s.y);
-//   if (h <= 0)
-//   {
-//      s.alive = false;
-//      return true;
-//   }
-//   return false;
-//}
-
+// Each frame represents 48 real-world seconds
+const double TIME_PER_FRAME = TIME_DILATION / FRAMES_PER_SECOND; // 1440 / 30 = 48
 
 
 
@@ -55,28 +49,14 @@ public:
    Simulator(Position ptUpperRight) :
       ptUpperRight(ptUpperRight)
    {
-
       ptGPS.setPixelsX(ptUpperRight.getPixelsX() * random(-0.5, 0.5));
       ptGPS.setPixelsY(ptUpperRight.getPixelsY() * random(-0.5, 0.5));
-
-      //Geo = geo();
-      /*geo.x = 0.0;
-      geo.y = 42164000.0;
-      geo.dx = -3100.0;
-      geo.dy = 0.0;*/
    }
-
   
-  
-  
-   //Geo;
    Position ptGPS;
    Position ptUpperRight;
 
-
-   //double angleShip;
-   double angleEarth;
-   Satellite geo;
+   Satellite gps;
 };
 
 /*************************************
@@ -90,33 +70,18 @@ void callBack(const Interface* pUI, void* p)
 {
    // the first step is to cast the void pointer into a game object. This
    // is the first step of every single callback function in OpenGL. 
-   Demo* pDemo = (Demo*)p;
+   Simulator* pSimulator = (Simulator*)p;
 
-   //
-   // accept input
-   //
-
-   // move by a little
-   if (pUI->isUp())
-      pDemo->ptShip.addPixelsY(1.0);
-   if (pUI->isDown())
-      pDemo->ptShip.addPixelsY(-1.0);
-   if (pUI->isLeft())
-      pDemo->ptShip.addPixelsX(-1.0);
-   if (pUI->isRight())
-      pDemo->ptShip.addPixelsX(1.0);
+  
 
 
    //
    // perform all the game logic
    //
 
-   // rotate the earth
-   pDemo->angleEarth += EARTH_ROTATION_PER_FRAME;
-   pDemo->angleShip += 0.02;
-   pDemo->phaseStar++;
+   
 
-   advanceSatellite(pDemo->geo, TIME_PER_FRAME);
+   pSimulator->gps.updatePhysics(TIME_PER_FRAME);
 
    //
    // draw everything
@@ -126,47 +91,19 @@ void callBack(const Interface* pUI, void* p)
    ogstream gout(pt);
 
    // draw satellites
-   // gout.drawCrewDragon(pDemo->ptCrewDragon, pDemo->angleShip);
-   // gout.drawHubble    (pDemo->ptHubble,     pDemo->angleShip);
-   // gout.drawSputnik   (pDemo->ptSputnik,    pDemo->angleShip);
-   // gout.drawStarlink  (pDemo->ptStarlink,   pDemo->angleShip);
-   // gout.drawShip      (pDemo->ptShip,       pDemo->angleShip, pUI->isSpace());
-   if (pDemo->geo.alive)
+   // gout.drawCrewDragon(pSimulator->ptCrewDragon, pSimulator->angleShip);
+   // gout.drawHubble    (pSimulator->ptHubble,     pSimulator->angleShip);
+   // gout.drawSputnik   (pSimulator->ptSputnik,    pSimulator->angleShip);
+   // gout.drawStarlink  (pSimulator->ptStarlink,   pSimulator->angleShip);
+   // gout.drawShip      (pSimulator->ptShip,       pSimulator->angleShip, pUI->isSpace());
+   if (pSimulator->gps.isAlive())
    {
       Position satPos;
-      satPos.setMetersX(pDemo->geo.x);
-      satPos.setMetersY(pDemo->geo.y);
+      satPos.setMetersX(pSimulator->gps.getPosition().getMetersX());
+      satPos.setMetersY(pSimulator->gps.getPosition().getMetersY());
       gout.drawGPS(satPos, 0.0);
    }
 
-   // draw parts
-   //pt.setPixelsX(pDemo->ptCrewDragon.getPixelsX() + 20);
-   //pt.setPixelsY(pDemo->ptCrewDragon.getPixelsY() + 20);
-   //gout.drawCrewDragonRight(pt, pDemo->angleShip); // notice only two parameters are set
-   //pt.setPixelsX(pDemo->ptHubble.getPixelsX() + 20);
-   //pt.setPixelsY(pDemo->ptHubble.getPixelsY() + 20);
-   //gout.drawHubbleLeft(pt, pDemo->angleShip);      // notice only two parameters are set
-   //pt.setPixelsX(pDemo->ptGPS.getPixelsX() + 20);
-   //pt.setPixelsY(pDemo->ptGPS.getPixelsY() + 20);
-   //gout.drawGPSCenter(pt, pDemo->angleShip);       // notice only two parameters are set
-   //pt.setPixelsX(pDemo->ptStarlink.getPixelsX() + 20);
-   //pt.setPixelsY(pDemo->ptStarlink.getPixelsY() + 20);
-   //gout.drawStarlinkArray(pt, pDemo->angleShip);   // notice only two parameters are set
-
-   // draw fragments
-   // pt.setPixelsX(pDemo->ptSputnik.getPixelsX() + 20);
-   // pt.setPixelsY(pDemo->ptSputnik.getPixelsY() + 20);
-   // gout.drawFragment(pt, pDemo->angleShip);
-   // pt.setPixelsX(pDemo->ptShip.getPixelsX() + 20);
-   // pt.setPixelsY(pDemo->ptShip.getPixelsY() + 20);
-   // gout.drawFragment(pt, pDemo->angleShip);
-
-   // draw a single star
-   gout.drawStar(pDemo->ptStar, pDemo->phaseStar);
-
-   // draw the earth
-   pt.setMeters(0.0, 0.0);
-   gout.drawEarth(pt, pDemo->angleEarth);
 }
 
 double Position::metersFromPixels = 40.0;
@@ -195,14 +132,14 @@ int main(int argc, char** argv)
    ptUpperRight.setPixelsX(1000.0);
    ptUpperRight.setPixelsY(1000.0);
    Interface ui(0, NULL,
-      "Demo",   /* name on the window */
+      "Simulator",   /* name on the window */
       ptUpperRight);
 
-   // Initialize the demo
-   Demo demo(ptUpperRight);
+   // Initialize the Simulator
+   Simulator Simulator(ptUpperRight);
 
    // set everything into action
-   ui.run(callBack, &demo);
+   ui.run(callBack, &Simulator);
 
    return 0;
 }

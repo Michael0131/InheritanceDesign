@@ -19,7 +19,7 @@ double Physics::computeGravityAngle(const Position& pos)
    return atan2(-pos.getMetersX(), -pos.getMetersY());
 }
 
-double Physics::computeAcceleration(const Position& pos, double& ddx, double& ddy)
+void Physics::computeAcceleration(const Position& pos, double& ddx, double& ddy)
 {
    double h = computeHeight(pos);
    double g = computeGravity(h);
@@ -27,6 +27,4 @@ double Physics::computeAcceleration(const Position& pos, double& ddx, double& dd
 
    ddx = g * sin(angle);
    ddy = g * cos(angle);
-
-   return ddx, ddy;
 }

@@ -1,80 +1,171 @@
-﻿  uiDraw.cpp
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(33,10): error C1083: Cannot open include file: 'GL/glut.h': No such file or directory
+﻿  position.cpp
+  test.cpp
+  uiDraw.cpp
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(86,15): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(86,23): error C2143: syntax error: missing ')' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(86,4): error C3861: 'glColor3f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(86,23): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(86,41): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(86,49): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(86,69): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(86,77): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(86,93): error C2059: syntax error: ')'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(114,15): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(115,8): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(116,8): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(114,4): error C3861: 'glColor3f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(125,16): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(125,24): error C2146: syntax error: missing ')' before identifier 'point'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(125,4): error C3861: 'glVertex2f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(125,24): error C2146: syntax error: missing ';' before identifier 'point'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(125,45): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(125,53): error C2146: syntax error: missing ';' before identifier 'point'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(125,71): error C2059: syntax error: ')'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(135,12): error C2065: 'GL_QUADS': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(135,4): error C3861: 'glBegin': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(153,4): error C3861: 'glEnd': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(164,18): error C2065: 'GLUT_BITMAP_HELVETICA_12': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(167,19): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(167,27): error C2146: syntax error: missing ')' before identifier 'topLeft'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(167,4): error C3861: 'glRasterPos2f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(167,27): error C2146: syntax error: missing ';' before identifier 'topLeft'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(168,8): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(168,16): error C2146: syntax error: missing ';' before identifier 'topLeft'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(168,36): error C2059: syntax error: ')'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(172,7): error C3861: 'glutBitmapCharacter': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(338,12): error C2065: 'GL_TRIANGLE_FAN': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(338,4): error C3861: 'glBegin': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(342,4): error C3861: 'glEnd': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(345,12): error C2065: 'GL_LINES': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(345,4): error C3861: 'glBegin': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(358,4): error C3861: 'glEnd': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(383,12): error C2065: 'GL_LINE_STRIP': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(383,4): error C3861: 'glBegin': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(397,4): error C3861: 'glEnd': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(422,12): error C2065: 'GL_LINE_STRIP': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(422,4): error C3861: 'glBegin': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(436,4): error C3861: 'glEnd': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(545,12): error C2065: 'GL_LINE_STRIP': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(545,4): error C3861: 'glBegin': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(555,4): error C3861: 'glEnd': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(580,12): error C2065: 'GL_LINE_STRIP': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(580,4): error C3861: 'glBegin': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(590,4): error C3861: 'glEnd': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(701,12): error C2065: 'GL_TRIANGLE_FAN': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(701,4): error C3861: 'glBegin': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(705,4): error C3861: 'glEnd': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(710,15): error C2065: 'GL_TRIANGLES': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(710,7): error C3861: 'glBegin': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(719,7): error C3861: 'glEnd': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(730,12): error C2065: 'GL_QUADS': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(730,4): error C3861: 'glBegin': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(737,4): error C3861: 'glEnd': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(858,12): error C2065: 'GL_POINTS': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(858,4): error C3861: 'glBegin': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(863,18): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(863,26): error C2143: syntax error: missing ')' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(863,7): error C3861: 'glColor3f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(863,26): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(863,44): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(863,52): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(863,72): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(863,80): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(863,96): error C2059: syntax error: ')'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(864,19): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(864,56): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(864,7): error C3861: 'glVertex2f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(869,18): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(869,26): error C2143: syntax error: missing ')' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(869,7): error C3861: 'glColor3f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(869,26): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(869,44): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(869,52): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(869,72): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(869,80): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(869,96): error C2059: syntax error: ')'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(870,19): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(870,56): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(870,7): error C3861: 'glVertex2f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(875,18): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(875,26): error C2143: syntax error: missing ')' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(875,7): error C3861: 'glColor3f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(875,26): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(875,44): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(875,52): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(875,72): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(875,80): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(875,96): error C2059: syntax error: ')'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(876,19): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(876,56): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(876,7): error C3861: 'glVertex2f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(877,18): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(877,26): error C2143: syntax error: missing ')' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(877,7): error C3861: 'glColor3f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(877,26): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiDraw.cpp(877,26): error C1003: error count exceeds 100; stopping compilation
   uiInteract.cpp
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(34,10): error C1083: Cannot open include file: 'Gl/glut.h': No such file or directory
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(91,12): error C2065: 'GL_COLOR_BUFFER_BIT': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(91,4): error C3861: 'glClear': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(92,15): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(92,23): error C2143: syntax error: missing ')' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(92,4): error C3861: 'glColor3f': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(92,23): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(92,41): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(92,49): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(92,69): error C2065: 'GLfloat': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(92,77): error C2143: syntax error: missing ';' before 'constant'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(92,93): error C2059: syntax error: ')'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(106,4): error C3861: 'glutSwapBuffers': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(173,9): error C2065: 'GLUT_KEY_DOWN': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(173,9): error C2131: expression did not evaluate to a constant
+      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(173,9):
+      a non-constant (sub-)expression was encountered
+  
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(176,9): error C2065: 'GLUT_KEY_UP': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(176,9): error C2131: expression did not evaluate to a constant
+      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(176,9):
+      a non-constant (sub-)expression was encountered
+  
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(179,9): error C2065: 'GLUT_KEY_RIGHT': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(179,9): error C2131: expression did not evaluate to a constant
+      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(179,9):
+      a non-constant (sub-)expression was encountered
+  
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(182,9): error C2065: 'GLUT_KEY_LEFT': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(182,9): error C2131: expression did not evaluate to a constant
+      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(182,9):
+      a non-constant (sub-)expression was encountered
+  
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(185,9): error C2065: 'GLUT_KEY_HOME': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(185,9): error C2131: expression did not evaluate to a constant
+      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(185,9):
+      a non-constant (sub-)expression was encountered
+  
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(173,9): error C2051: case expression not constant
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(176,9): error C2051: case expression not constant
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(179,9): error C2051: case expression not constant
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(182,9): error C2051: case expression not constant
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(185,9): error C2051: case expression not constant
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(287,4): error C3861: 'glutInit': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(288,4): error C3861: 'glutInitWindowSize': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(291,4): error C3861: 'glutInitWindowPosition': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(292,24): error C2065: 'GLUT_DOUBLE': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(292,38): error C2065: 'GLUT_RGB': undeclared identifier
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(292,4): error C3861: 'glutInitDisplayMode': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(293,4): error C3861: 'glutCreateWindow': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(294,4): error C3861: 'glutIgnoreKeyRepeat': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(297,4): error C3861: 'glClearColor': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(298,4): error C3861: 'gluOrtho2D': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(302,4): error C3861: 'glutDisplayFunc': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(303,4): error C3861: 'glutIdleFunc': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(304,4): error C3861: 'glutKeyboardFunc': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(305,4): error C3861: 'glutSpecialFunc': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(306,4): error C3861: 'glutSpecialUpFunc': identifier not found
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab07\uiInteract.cpp(333,4): error C3861: 'glutMainLoop': identifier not found
   entity.cpp
+  gps.cpp
   Lab09.cpp
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(93,4): error C2065: 'Demo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(93,10): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(93,19): error C2065: 'Demo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(93,24): error C2059: syntax error: ')'
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(101,7): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(103,7): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(105,7): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(107,7): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(115,4): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(115,25): error C2065: 'EARTH_ROTATION_PER_FRAME': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(116,4): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(117,4): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(119,21): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(119,33): error C2065: 'TIME_PER_FRAME': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(119,4): error C3861: 'advanceSatellite': identifier not found
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(134,8): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(137,25): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(138,25): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(165,18): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(165,33): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(165,9): error C2660: 'ogstream::drawStar': function does not take 1 arguments
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\uiDraw.h(78,17):
-      see declaration of 'ogstream::drawStar'
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(165,9):
-      while trying to match the argument list '()'
-  
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(169,23): error C2065: 'pDemo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(169,9): error C2660: 'ogstream::drawEarth': function does not take 1 arguments
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\uiDraw.h(76,17):
-      see declaration of 'ogstream::drawEarth'
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(169,9):
-      while trying to match the argument list '(Position)'
-  
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(202,4): error C2065: 'Demo': undeclared identifier
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(202,9): error C2146: syntax error: missing ';' before identifier 'demo'
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(202,9): error C3861: 'demo': identifier not found
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\Lab09.cpp(205,22): error C2065: 'demo': undeclared identifier
   physics.cpp
   satellite.cpp
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.cpp(17,26): error C2039: 'x': is not a member of 'Satellite'
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.h(10,7):
-      see declaration of 'Satellite'
-  
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.cpp(17,31): error C2039: 'y': is not a member of 'Satellite'
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.h(10,7):
-      see declaration of 'Satellite'
-  
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.cpp(17,4): error C3861: 'computeAcceleration': identifier not found
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.cpp(20,6): error C2039: 'x': is not a member of 'Satellite'
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.h(10,7):
-      see declaration of 'Satellite'
-  
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.cpp(20,13): error C2039: 'dx': is not a member of 'Satellite'
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.h(10,7):
-      see declaration of 'Satellite'
-  
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.cpp(21,6): error C2039: 'y': is not a member of 'Satellite'
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.h(10,7):
-      see declaration of 'Satellite'
-  
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.cpp(21,13): error C2039: 'dy': is not a member of 'Satellite'
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.h(10,7):
-      see declaration of 'Satellite'
-  
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.cpp(24,6): error C2039: 'dx': is not a member of 'Satellite'
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.h(10,7):
-      see declaration of 'Satellite'
-  
-C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.cpp(25,6): error C2039: 'dy': is not a member of 'Satellite'
-      C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab09\satellite.h(10,7):
-      see declaration of 'Satellite'
-  
   velocity.cpp
   Generating Code...
