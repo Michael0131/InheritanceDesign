@@ -62,13 +62,7 @@ void Satellite::draw(ogstream& /*gout*/)
 }
 
 
-//bool checkCollison(Satellite& s)
-//{
-//   double h = computeHeight(s.x, s.y);
-//   if (h <= 0)
-//   {
-//      s.alive = false;
-//      return true;
-//   }
-//   return false;
-//}
+void Satellite::breakup()
+{
+   // 
+}

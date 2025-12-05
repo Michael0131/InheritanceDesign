@@ -27,6 +27,11 @@ public:
         v.setDY(-ORBIT_SPEED_Y);
 
         alive = true;
+
+        double metersPerPixel = pos.getZoom();
+
+        // Hubble radius is 10 pixels
+        setRadius(10.0 * metersPerPixel);
     }
 
     virtual void draw(ogstream& gout) override

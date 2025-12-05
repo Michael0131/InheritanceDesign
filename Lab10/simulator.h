@@ -23,19 +23,19 @@ public:
     Position ptGPS;
     GPS gps;
 
-    //CrewDragon Satellite
+    // CrewDragon Satellite
     Position ptCrewDragon;
     CrewDragon crewDragon;
 
-    //Hubble Satellite
+    // Hubble Satellite
     Position ptHubble;
     Hubble hubble;
 
-    //Sputnik Satellite
+    // Sputnik Satellite
     Position ptSputnik;
     Sputnik sputnik;
 
-    //Starlink Satellite
+    // Starlink Satellite
     Position ptStarlink;
     Starlink starlink;
 
@@ -43,6 +43,22 @@ public:
 
     // Dream Chaser
     DreamChaser dreamChaser;
+
+    std::vector<Entity*> getEntities()
+    {
+       std::vector<Entity*> entities;
+
+       // all satellites (GPS, CrewDragon, Hubble, Sputnik, Starlink...)
+       for (Satellite* s : sats)
+          entities.push_back(s);
+
+       // ship
+       entities.push_back(&dreamChaser);
+
+       // all fragments and parts
+
+       return entities;
+    }
 
     double earthAngle;   // <<< holds Earth's rotation angle
 };

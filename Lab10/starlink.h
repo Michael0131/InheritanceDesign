@@ -27,6 +27,11 @@ public:
         v.setDY(-ORBIT_SPEED_Y);
 
         alive = true;
+
+        double metersPerPixel = pos.getZoom();
+
+        // Starlink radius is 6 pixels
+        setRadius(6.0 * metersPerPixel);
     }
 
     virtual void draw(ogstream& gout) override

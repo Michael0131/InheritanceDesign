@@ -95,6 +95,31 @@ void callBack(const Interface* pUI, void* p)
         gout.drawShip(shipPos, angle, thrust);
     }
 
+    // Collision Detection
+    std::vector<Entity*> entities = sim->getEntities();
+    int n = (int)entities.size();
+
+    // O(n^2) -- but that's okay for the scope of this assignment 
+    // (since the total number of parts, fragments, and satellites is fairly small)
+    for (int i = 0; i < n; ++i)
+    {
+       Entity* a = entities[i];
+       if (!a->isAlive()) continue;
+
+       for (int j = i + 1; j < n; ++j)
+       {
+          Entity* b = entities[j];
+          if (!b->isAlive()) continue;
+
+          if (a->collidesWith(*b))     // geometric test
+          {
+             cout << "Collided!" << endl;
+             a->onCollision(*b);      // response
+             b->onCollision(*a);
+          }
+       }
+    }
+
 }
 
 

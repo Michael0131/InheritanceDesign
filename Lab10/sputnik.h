@@ -27,6 +27,11 @@ public:
         v.setDY(-ORBIT_SPEED_Y);
 
         alive = true;
+
+        double metersPerPixel = pos.getZoom();
+
+        // Sputnik radius is 4 pixels
+        setRadius(4.0 * metersPerPixel);
     }
 
     virtual void draw(ogstream& gout) override

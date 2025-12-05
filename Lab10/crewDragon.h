@@ -27,6 +27,11 @@ public:
         v.setDY(-ORBIT_SPEED_Y);
 
         alive = true;
+
+        double metersPerPixel = pos.getZoom();
+
+        // Crew Dragon radius is 7 pixels
+        setRadius(7.0 * metersPerPixel);
     }
 
     virtual void draw(ogstream& gout) override

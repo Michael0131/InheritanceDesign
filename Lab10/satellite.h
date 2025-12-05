@@ -16,8 +16,21 @@ public:
    Satellite() {}
 
 
-   // Methods
+   // Collision
+   virtual void onCollision(Entity& other) override
+   {
+      alive = false;
+      breakup(); // satellite-specific
+   }
+
+   // Additional Methods
    virtual void draw(ogstream& gout) override;
    virtual void update(double dt) override;
+   
+
    double angle;
+
+private:
+   void breakup(); // creates Parts and Fragments
+
 };
