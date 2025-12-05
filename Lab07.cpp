@@ -16,59 +16,15 @@
 #include "position.h"
 #include "test.h"
 #include "satellite.h"
+#include "simulator.h"
 #include "gps.h"
+#include "constants.h"
 #include "dreamChaser.h"
+#include "fragment.h"
 #include <vector>
 
 using namespace std;
 
-/***********************************************
- * TIME CONSTANTS
- ***********************************************/
-const double HOURS_PER_DAY = 24.0;
-const double MINUTES_PER_HOUR = 60.0;
-const double FRAMES_PER_SECOND = 30.0;
-
-const double TIME_DILATION = HOURS_PER_DAY * MINUTES_PER_HOUR;     // 1440
-const double TIME_PER_FRAME = TIME_DILATION / FRAMES_PER_SECOND;   // 48 sec/frame
-
-// Earth rotates one full turn every 24 hours
-const double SECONDS_PER_DAY = 24.0 * 60.0 * 60.0; // 86400 seconds
-const double EARTH_ROTATION_PER_FRAME =
-(2.0 * M_PI / SECONDS_PER_DAY) * TIME_PER_FRAME;   // radians per frame
-
-
-/***********************************************
- * SIMULATOR CLASS
- ***********************************************/
-class Simulator
-{
-public:
-    Simulator(Position ptUpperRight);
-
-    Position ptGPS;
-    Position ptDreamChaser;
-    Position ptUpperRight;
-
-    DreamChaser dreamChaser;
-    GPS gps;
-
-    std::vector<Satellite*> sats;
-
-    double earthAngle;   // <<< holds Earth's rotation angle
-};
-
-
-/***********************************************
- * SIMULATOR CONSTRUCTOR
- ***********************************************/
-Simulator::Simulator(Position ptUpperRight)
-    : ptUpperRight(ptUpperRight)
-{
-    sats.push_back(new GPS());
-
-    earthAngle = 0.0;  // <<< start Earth at angle 0
-}
 
 
 /***********************************************
@@ -78,15 +34,10 @@ void callBack(const Interface* pUI, void* p)
 {
     Simulator* sim = (Simulator*)p;
 
-    //
-    // PHYSICS UPDATE
-    //
-    sim->gps.update(TIME_PER_FRAME);
-    sim->dreamChaser.update(TIME_PER_FRAME);
-    //
     // EARTH ROTATION UPDATE
     //
     sim->earthAngle -= EARTH_ROTATION_PER_FRAME;
+    sim->dreamChaser.update(TIME_PER_FRAME);
 
     //
     // DRAWING
@@ -99,26 +50,43 @@ void callBack(const Interface* pUI, void* p)
     earthPos.setMeters(0.0, 0.0);
     gout.drawEarth(earthPos, sim->earthAngle);
 
-    // Draw orbiting satellite
-    if (sim->gps.isAlive())
+    for (Fragment* frag : sim->fragments)
     {
-        Position satPos;
-        satPos.setMetersX(sim->gps.getPosition().getMetersX());
-        satPos.setMetersY(sim->gps.getPosition().getMetersY());
+        if (!frag->isAlive())
+            continue;
+        frag->update(TIME_PER_FRAME);
+        frag->decay();
+        frag->spin();
+        frag->draw(gout);
+    }
+    
 
-        // compute angle so satellite faces Earth
-        double x = satPos.getMetersX();
-        double y = satPos.getMetersY();
+    for (Satellite* sat : sim->sats)
+    {
+        if (!sat->isAlive())
+            continue;
+
+        // update physics
+        sat->update(TIME_PER_FRAME);
+
+        Position Pos = sat->getPosition();
+
+        double x = Pos.getMetersX();
+        double y = Pos.getMetersY();
 
         double angleToEarth = atan2(-x, -y);
 
-        gout.drawGPS(satPos, angleToEarth);
+        sat->angle = angleToEarth;
+
+        sat->draw(gout);
+
     }
+
     if (sim->dreamChaser.isAlive())
     {
-       Position shipPos;
-       shipPos.setMetersX(sim->dreamChaser.getPosition().getMetersX());
-       shipPos.setMetersY(sim->dreamChaser.getPosition().getMetersY());
+        Position shipPos;
+        shipPos.setMetersX(sim->dreamChaser.getPosition().getMetersX());
+        shipPos.setMetersY(sim->dreamChaser.getPosition().getMetersY());
 
         // control the Dream Chaser
         if (pUI->isDown())
@@ -129,14 +97,14 @@ void callBack(const Interface* pUI, void* p)
             sim->dreamChaser.rotate(-0.1);
         if (pUI->isRight())
             sim->dreamChaser.rotate(0.1);
-       
-       double x = shipPos.getMetersX();
-       double y = shipPos.getMetersY();
-       double thrust = sim->dreamChaser.getThrust();
 
-       double angle = sim->dreamChaser.getRotation();
+        double x = shipPos.getMetersX();
+        double y = shipPos.getMetersY();
+        double thrust = sim->dreamChaser.getThrust();
 
-       gout.drawShip(shipPos, angle, thrust);
+        double angle = sim->dreamChaser.getRotation();
+
+        gout.drawShip(shipPos, angle, thrust);
     }
 
 }
