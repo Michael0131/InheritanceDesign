@@ -1,6 +1,7 @@
 ﻿#pragma once
 #include "entity.h"
 #include "physics.h"
+#include "bullet.h"
 #include <cmath>
 
 class TestDreamChaser;
@@ -50,9 +51,24 @@ public:
     double getRotation() {
         return angle;
     }
-    void fire()
+    Bullet fire() const
     {
-        // Empty for now
+        const double BULLET_SPEED = 9000.0;
+
+        double rad = angle;
+
+        // Create bullet position 19 pixels in front of ship
+        Position muzzle = pos;
+        muzzle.addPixelsX(19.0 * sin(rad));
+        muzzle.addPixelsY(19.0 * cos(rad));
+
+        // Bullet velocity = ship velocity + muzzle velocity
+        Velocity vel(
+            v.getDX() + BULLET_SPEED * sin(rad),
+            v.getDY() + BULLET_SPEED * cos(rad)
+        );
+
+        return Bullet(muzzle, vel);
     }
     void draw(ogstream& gout) override
     {

@@ -7,6 +7,7 @@
 #include "sputnik.h"
 #include "starlink.h"
 #include "dreamChaser.h"
+#include "bullet.h"
 #include <vector>
 
 /***********************************************
@@ -40,6 +41,8 @@ public:
     Starlink starlink;
 
     std::vector<Satellite*> sats;
+
+    std::vector<Bullet> bullets;
 
     // Dream Chaser
     DreamChaser dreamChaser;

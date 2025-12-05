@@ -20,6 +20,7 @@
 #include "gps.h"
 #include "constants.h"
 #include "dreamChaser.h"
+#include "bullet.h"
 #include <vector>
 
 using namespace std;
@@ -70,6 +71,24 @@ void callBack(const Interface* pUI, void* p)
 
     }
 
+    // Update and draw bullets
+    for (Bullet& b : sim->bullets)
+    {
+        if (b.isAlive())
+        {
+            b.update(TIME_PER_FRAME);
+            b.draw(gout);
+        }
+    }
+
+    // Remove bullets that are no longer alive
+    sim->bullets.erase(
+        remove_if(sim->bullets.begin(), sim->bullets.end(),
+            [](const Bullet& b) { return !b.isAlive(); }),
+        sim->bullets.end()
+    );
+
+
     if (sim->dreamChaser.isAlive())
     {
         Position shipPos;
@@ -91,6 +110,12 @@ void callBack(const Interface* pUI, void* p)
         double thrust = sim->dreamChaser.getThrust();
 
         double angle = sim->dreamChaser.getRotation();
+
+        // Fire bullet when spacebar is pressed
+        if (pUI->isSpace())
+        {
+            sim->bullets.push_back(sim->dreamChaser.fire());
+        }
 
         gout.drawShip(shipPos, angle, thrust);
     }

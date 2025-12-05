@@ -17,6 +17,7 @@
 #include "testCrewDragon.h"
 #include "testHubble.h"
 #include "testSputnik.h"
+#include "testBullet.h"
 #include "testDreamChaser.h"
 
 #ifdef _WIN32
@@ -48,4 +49,5 @@ void testRunner()
 	TestHubble().run();
 	TestSputnik().run();
 	TestDreamChaser().run();
+	TestBullet().run();
 }

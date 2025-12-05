@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="bullet.cpp" />
     <ClCompile Include="entity.cpp" />
     <ClCompile Include="Lab07.cpp" />
     <ClCompile Include="physics.cpp" />
@@ -150,6 +151,7 @@
     <ClCompile Include="velocity.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="bullet.h" />
     <ClInclude Include="constants.h" />
     <ClInclude Include="crewDragon.h" />
     <ClInclude Include="dreamChaser.h" />
@@ -163,6 +165,7 @@
     <ClInclude Include="sputnik.h" />
     <ClInclude Include="starlink.h" />
     <ClInclude Include="test.h" />
+    <ClInclude Include="testBullet.h" />
     <ClInclude Include="testCrewDragon.h" />
     <ClInclude Include="testDreamChaser.h" />
     <ClInclude Include="testEntity.h" />
