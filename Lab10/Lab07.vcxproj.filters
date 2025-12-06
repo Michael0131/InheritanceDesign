@@ -1,56 +1,161 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="bullet.cpp" />
-    <ClCompile Include="entity.cpp" />
-    <ClCompile Include="Lab07.cpp" />
-    <ClCompile Include="physics.cpp" />
-    <ClCompile Include="position.cpp" />
-    <ClCompile Include="satellite.cpp" />
-    <ClCompile Include="test.cpp" />
-    <ClCompile Include="uiDraw.cpp" />
-    <ClCompile Include="uiInteract.cpp" />
-    <ClCompile Include="velocity.cpp" />
-    <ClCompile Include="sputnik.cpp" />
-    <ClCompile Include="gps.cpp" />
-    <ClCompile Include="simulator.cpp" />
-    <ClCompile Include="destructibleEntity.cpp" />
+    <ClCompile Include="bullet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gps.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lab07.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="physics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="position.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="satellite.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="simulator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sputnik.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uiDraw.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="uiInteract.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="velocity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="bullet.h" />
-    <ClInclude Include="constants.h" />
-    <ClInclude Include="crewDragon.h" />
-    <ClInclude Include="dreamChaser.h" />
-    <ClInclude Include="entity.h" />
-    <ClInclude Include="fragment.h" />
-    <ClInclude Include="gps.h" />
-    <ClInclude Include="hubble.h" />
-    <ClInclude Include="physics.h" />
-    <ClInclude Include="position.h" />
-    <ClInclude Include="satellite.h" />
-    <ClInclude Include="simulator.h" />
-    <ClInclude Include="sputnik.h" />
-    <ClInclude Include="starlink.h" />
-    <ClInclude Include="test.h" />
-    <ClInclude Include="testBullet.h" />
-    <ClInclude Include="testCrewDragon.h" />
-    <ClInclude Include="testDreamChaser.h" />
-    <ClInclude Include="testEntity.h" />
-    <ClInclude Include="testGPS.h" />
-    <ClInclude Include="testHubble.h" />
-    <ClInclude Include="testPhysics.h" />
-    <ClInclude Include="testPosition.h" />
-    <ClInclude Include="testSatellite.h" />
-    <ClInclude Include="testSputnik.h" />
-    <ClInclude Include="testStarlink.h" />
-    <ClInclude Include="testVelocity.h" />
-    <ClInclude Include="uiDraw.h" />
-    <ClInclude Include="uiInteract.h" />
-    <ClInclude Include="unitTest.h" />
-    <ClInclude Include="velocity.h" />
-    <ClInclude Include="destructibleEntity.h" />
+    <ClInclude Include="constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bullet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dreamChaser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="entity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="fragment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="physics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="position.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="simulator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uiDraw.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="uiInteract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="velocity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testDreamChaser.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testCrewDragon.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testHubble.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testPhysics.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testPosition.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testEntity.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testBullet.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testSatellite.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testSputnik.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testGPS.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testStarlink.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testVelocity.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="unitTest.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sputnik.h">
+      <Filter>Header Files\Satellites</Filter>
+    </ClInclude>
+    <ClInclude Include="starlink.h">
+      <Filter>Header Files\Satellites</Filter>
+    </ClInclude>
+    <ClInclude Include="satellite.h">
+      <Filter>Header Files\Satellites</Filter>
+    </ClInclude>
+    <ClInclude Include="hubble.h">
+      <Filter>Header Files\Satellites</Filter>
+    </ClInclude>
+    <ClInclude Include="crewDragon.h">
+      <Filter>Header Files\Satellites</Filter>
+    </ClInclude>
+    <ClInclude Include="gps.h">
+      <Filter>Header Files\Satellites</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{538b8aac-4138-42d9-96c7-c1533552da67}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Resources">
+      <UniqueIdentifier>{098cd05b-6af8-4aaa-aad2-9d190e853bc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{46da3b5e-65ff-4587-8bf9-53d4b007825a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Satellites">
+      <UniqueIdentifier>{5f426dbe-e8b6-49f7-99f7-a0b8625856a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Test Files">
+      <UniqueIdentifier>{00f5db90-9870-4bd1-93a7-08a9b8d8e512}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <Filter>Header Files\Resources</Filter>
+    </None>
   </ItemGroup>
 </Project>
