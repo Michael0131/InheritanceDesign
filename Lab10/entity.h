@@ -13,6 +13,8 @@
 using namespace std;
 
 
+class Simulator;
+
 class Position;
 class Velocity;
 class TestEntity;
@@ -27,6 +29,7 @@ public:
    Entity() : pos(0.0, 0.0), v(0.0, 0.0), angle(0.0), radius(0.0), alive(true) {}
 
    // Setters
+
    void setRadius(double r) { radius = r; }
 
    // Getters
@@ -50,7 +53,7 @@ public:
    // Collision
    bool collidesWith(const Entity& other) const; // collision check
 
-   virtual void onCollision(Entity& other) { alive = false; } // reaction to collision
+   virtual void onCollision(Entity& other, Simulator&) { alive = false; } // reaction to collision
 
 protected:
 

@@ -20,10 +20,7 @@
 #include "gps.h"
 #include "constants.h"
 #include "dreamChaser.h"
-<<<<<<< Updated upstream
 #include "bullet.h"
-=======
->>>>>>> Stashed changes
 #include "fragment.h"
 #include <vector>
 
@@ -128,7 +125,7 @@ void callBack(const Interface* pUI, void* p)
         // Fire bullet when spacebar is pressed
         if (pUI->isSpace())
         {
-            sim->bullets.push_back(&sim->dreamChaser.fire());
+            sim->bullets.push_back(sim->dreamChaser.fire());
         }
 
         gout.drawShip(shipPos, angle, thrust);
@@ -153,8 +150,8 @@ void callBack(const Interface* pUI, void* p)
           if (a->collidesWith(*b))     // geometric test
           {
              cout << "Collided!" << endl;
-             a->onCollision(*b);      // response
-             b->onCollision(*a);
+             a->onCollision(*b, *sim);      // response
+             b->onCollision(*a, *sim);
           }
        }
     }

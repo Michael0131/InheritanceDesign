@@ -1,8 +1,10 @@
 #pragma once
 #include "entity.h"
+#include "constants.h"
 #include <cmath>
 
 class TestStarlink;
+
 
 class Fragment : public Entity
 {
@@ -11,7 +13,7 @@ public:
    Fragment(const Position& inPos, const Velocity& inVel)
    {
       // 
-      double theta = random(0, 360) * M_PI / 180.0;
+      double theta = random(0, 360) * PI / 180.0;
       double kick = random(5000, 9000);
 
       // Place fragment

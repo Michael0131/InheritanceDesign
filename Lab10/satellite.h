@@ -17,10 +17,10 @@ public:
 
 
    // Collision
-   virtual void onCollision(Entity& other) override
+   virtual void onCollision(Entity& other, Simulator& sim) override
    {
       alive = false;
-      breakup(); // satellite-specific
+      breakup(sim); // satellite-specific
    }
 
    // Additional Methods
@@ -30,7 +30,7 @@ public:
 
    double angle;
 
-private:
-   virtual void breakup(); // creates Parts and Fragments
+protected:
+   virtual void breakup(Simulator& sim); // creates Parts and Fragments
 
 };

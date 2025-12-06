@@ -1,13 +1,15 @@
 
+#pragma once
+
 #include "position.h"
 #include "gps.h"
-#include "satellite.h"
 #include "crewDragon.h"
 #include "hubble.h"
 #include "sputnik.h"
 #include "starlink.h"
 #include "dreamChaser.h"
 #include "bullet.h"
+#include "fragment.h"
 #include <vector>
 
 /***********************************************
@@ -42,12 +44,14 @@ public:
 
     std::vector<Satellite*> sats;
 
-    std::vector<Bullet*> bullets;
+    std::vector<Bullet> bullets;
 
     // Dream Chaser
     DreamChaser dreamChaser;
 
-    //Fragment
+    // Part
+    //std::vector<Part*> parts;
+    // Fragment
     std::vector<Fragment*> fragments;
 
     std::vector<Entity*> getEntities()
@@ -62,8 +66,8 @@ public:
        entities.push_back(&dreamChaser);
 
        // bullets
-       for (Bullet* b : bullets)
-          entities.push_back(b);
+       for (Bullet& b : bullets)
+          entities.push_back(&b);
 
        // all fragments and parts
        for (Fragment* f : fragments)
@@ -76,59 +80,3 @@ public:
 
     double earthAngle;   // <<< holds Earth's rotation angle
 };
-
-
-/***********************************************
- * SIMULATOR CONSTRUCTOR
- ***********************************************/
-Simulator::Simulator(Position ptUpperRight)
-    : ptUpperRight(ptUpperRight)
-{
-
-    earthAngle = 0.0;  // <<< start Earth at angle 0
-
-    // A set of 6 GPS Satellites
-    sats.push_back(new GPS(
-        0.0, 26'560'000.0,
-        -3880.0, 0.0
-    ));
-
-    sats.push_back(new GPS(
-        23'001'634.72, 13'280'000.0,
-        -1940.0, 3360.18
-    ));
-
-    sats.push_back(new GPS(
-        23'001'634.72, -13'280'000.0,
-        1940.0, 3360.18
-    ));
-
-    sats.push_back(new GPS(
-        0.0, -26'560'000.0,
-        3880.0, 0.0
-    ));
-
-    sats.push_back(new GPS(
-        -23'001'634.72, -13'280'000.0,
-        1940.0, -3360.18
-    ));
-
-    sats.push_back(new GPS(
-        -23'001'634.72, 13'280'000.0,
-        -1940.0, -3360.18
-    ));
-
-
-    sats.push_back(new CrewDragon);
-    sats.push_back(new Hubble);
-    sats.push_back(new Sputnik);
-    sats.push_back(new Starlink);
-
-
-    // Fragments
-    Position fragPos(-23'001'634.72, 13'280'000.0);
-    Velocity fragVel(-1940.0, -3360.18);
-
-    fragments.push_back(new Fragment(fragPos, fragVel));
-
-}

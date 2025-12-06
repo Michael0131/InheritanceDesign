@@ -141,10 +141,13 @@
   <ItemGroup>
     <ClCompile Include="bullet.cpp" />
     <ClCompile Include="entity.cpp" />
+    <ClCompile Include="gps.cpp" />
     <ClCompile Include="Lab07.cpp" />
     <ClCompile Include="physics.cpp" />
     <ClCompile Include="position.cpp" />
     <ClCompile Include="satellite.cpp" />
+    <ClCompile Include="simulator.cpp" />
+    <ClCompile Include="sputnik.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="uiDraw.cpp" />
     <ClCompile Include="uiInteract.cpp" />

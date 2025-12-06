@@ -57,18 +57,6 @@ public:
        gout.drawGPS(pos, angle);
    }
 
-   virtual void breakup() override
-   {
-      // create 3 parts (GPSCenterPart, GPSLeftPart, GPSRightPart)
-      
-
-      // create 2 fragments
-      const int NUM_FRAGMENTS = 2;
-      for (int i = 0; i < NUM_FRAGMENTS; ++i)
-      {
-         Fragment(pos, v);
-      }
-
-      // add them to Simulator
-   }
+protected:
+   virtual void breakup(Simulator& sim) override;
 };

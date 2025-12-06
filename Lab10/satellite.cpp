@@ -62,7 +62,8 @@ void Satellite::draw(ogstream& /*gout*/)
 }
 
 
-void Satellite::breakup()
+void Satellite::breakup(Simulator&)
 {
    // Each satellite defines its own breakup logic
+   // Base class does nothing
 }
