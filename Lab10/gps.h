@@ -23,8 +23,6 @@ public:
        v.setDX(0.0);
        v.setDY(0.0);
 
-       double metersPerPixel = pos.getZoom();
-
        // GPS radius is 12 pixels
        setRadius(12.0 * metersPerPixel);
 

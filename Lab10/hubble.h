@@ -28,8 +28,6 @@ public:
 
         alive = true;
 
-        double metersPerPixel = pos.getZoom();
-
         // Hubble radius is 10 pixels
         setRadius(10.0 * metersPerPixel);
     }
@@ -39,4 +37,10 @@ public:
         // Let Simulator compute orientation (angleToEarth)
         gout.drawHubble(pos, angle);
     }
+protected:
+   // Hubble breaks into 4 parts; fragments only come from those parts,
+   // so whole-Hubble can have 0 fragments on breakup
+   int fragmentCountOnBreakup() const override { return 0; }
+
+   void createParts(Simulator& sim) override;
 };

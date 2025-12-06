@@ -26,8 +26,6 @@ public:
         v.setDX(0.0);
         v.setDY(-2000.0);
 
-        double metersPerPixel = pos.getZoom();
-
         // Ship radius is 10 pixels
         setRadius(10.0 * metersPerPixel);
 

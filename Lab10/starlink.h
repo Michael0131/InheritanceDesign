@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 #include "satellite.h"
 #include <cmath>
 
@@ -28,8 +28,6 @@ public:
 
         alive = true;
 
-        double metersPerPixel = pos.getZoom();
-
         // Starlink radius is 6 pixels
         setRadius(6.0 * metersPerPixel);
     }
@@ -39,4 +37,8 @@ public:
         // Let Simulator compute orientation (angleToEarth)
         gout.drawStarlink(pos, angle);
     }
+protected:
+   // Starlink → 2 parts + 2 fragments
+   int fragmentCountOnBreakup() const override { return 2; }
+   void createParts(Simulator& sim) override;
 };

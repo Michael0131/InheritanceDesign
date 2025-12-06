@@ -28,8 +28,6 @@ public:
 
         alive = true;
 
-        double metersPerPixel = pos.getZoom();
-
         // Crew Dragon radius is 7 pixels
         setRadius(7.0 * metersPerPixel);
     }
@@ -39,4 +37,7 @@ public:
         // Let Simulator compute orientation (angleToEarth)
         gout.drawCrewDragon(pos, angle);
     }
+protected:
+   int fragmentCountOnBreakup() const override { return 2; } // 3 parts + 2 fragments
+   void createParts(Simulator& sim) override;
 };

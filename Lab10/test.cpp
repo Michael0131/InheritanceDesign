@@ -20,6 +20,10 @@
 #include "testBullet.h"
 #include "testDreamChaser.h"
 
+#include "testPart.h"
+#include "testFragment.h"
+#include "testCollision.h"
+
 #ifdef _WIN32
 #include <windows.h>
 #include <iostream>
@@ -50,4 +54,8 @@ void testRunner()
 	TestSputnik().run();
 	TestDreamChaser().run();
 	TestBullet().run();
+
+	TestFragment().run();
+	TestPart().run();
+	TestCollision().run();
 }

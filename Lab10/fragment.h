@@ -12,26 +12,12 @@ class Fragment : public Entity
 public:
    Fragment(const Position& inPos, const Velocity& inVel)
    {
-      double metersPerPixel = pos.getZoom();
-
-      // 
-      double theta = random(0, 360) * PI / 180.0;
-      double kick = random(5000, 9000);
-
-      // Place fragment
-      pos.setMetersX(inPos.getMetersX() + (4 * metersPerPixel) * cos(theta));
-      pos.setMetersY(inPos.getMetersY() + (4 * metersPerPixel) * sin(theta));
-
-      // set Velocity
-      v.setDX(inVel.getDX() + kick * cos(theta));
-      v.setDY(inVel.getDY() + kick * sin(theta));
+      pos = inPos;
+      v = inVel;
 
       timeToLive = random(50, 100);
-
-      alive = true;
       rotation = random(-60, 60);
-
-      
+      alive = true;
 
       // Fragment radius is 2 pixels
       setRadius(2.0 * metersPerPixel);

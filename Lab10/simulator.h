@@ -10,6 +10,7 @@
 #include "dreamChaser.h"
 #include "bullet.h"
 #include "fragment.h"
+#include "part.h"
 #include <vector>
 
 /***********************************************
@@ -50,7 +51,7 @@ public:
     DreamChaser dreamChaser;
 
     // Part
-    //std::vector<Part*> parts;
+    std::vector<Part*> parts;
     // Fragment
     std::vector<Fragment*> fragments;
 
@@ -73,7 +74,8 @@ public:
        for (Fragment* f : fragments)
           entities.push_back(f);
 
-
+       for (Part* p : parts)
+          entities.push_back(p);
 
        return entities;
     }

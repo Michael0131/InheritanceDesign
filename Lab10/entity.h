@@ -26,7 +26,10 @@ class Entity
 	friend TestEntity;
 public:
 
-   Entity() : pos(0.0, 0.0), v(0.0, 0.0), angle(0.0), radius(0.0), alive(true) {}
+   Entity() : pos(0.0, 0.0), v(0.0, 0.0), angle(0.0), radius(0.0), alive(true) 
+   {
+      metersPerPixel = pos.getZoom();
+   }
 
    // Setters
 
@@ -55,6 +58,9 @@ public:
 
    virtual void onCollision(Entity& other, Simulator&) { alive = false; } // reaction to collision
 
+   // variables
+   double metersPerPixel;
+   virtual bool canCollide() const { return alive; } // by default, anything alive can collide
 protected:
 
    Position pos;

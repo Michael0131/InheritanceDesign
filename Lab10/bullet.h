@@ -13,7 +13,8 @@ class Bullet : public Entity
 public:
     Bullet()
     {
-        radius = 1.0;     // small collision radius
+        setRadius(4.0 * metersPerPixel);
+        
         lifetime = 70;    // frames until expiration
         alive = true;
     }
@@ -25,6 +26,8 @@ public:
         radius = 1.0;
         lifetime = 70;
         alive = true;
+
+        setRadius(4.0 * metersPerPixel);
     }
 
     virtual void update(double dt) override;

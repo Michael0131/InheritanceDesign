@@ -61,6 +61,15 @@ void callBack(const Interface* pUI, void* p)
        frag->draw(gout);
     }
 
+    for (Part* part : sim->parts)
+    {
+       if (!part->isAlive())
+          continue;
+       
+       part->update(TIME_PER_FRAME);
+       part->draw(gout);
+    }
+
     for (Satellite* sat : sim->sats)
     {
         if (!sat->isAlive())
@@ -140,12 +149,12 @@ void callBack(const Interface* pUI, void* p)
     for (int i = 0; i < n; ++i)
     {
        Entity* a = entities[i];
-       if (!a->isAlive()) continue;
+       if (!a->isAlive() || !a->canCollide()) continue;
 
        for (int j = i + 1; j < n; ++j)
        {
           Entity* b = entities[j];
-          if (!b->isAlive()) continue;
+          if (!b->isAlive() || !b->canCollide()) continue;
 
           if (a->collidesWith(*b))     // geometric test
           {

@@ -40,6 +40,16 @@
     <ClCompile Include="velocity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="destructibleEntity.cpp" />
+    <ClCompile Include="hubble.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crewDragon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="starlink.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="constants.h">
@@ -134,6 +144,21 @@
     </ClInclude>
     <ClInclude Include="gps.h">
       <Filter>Header Files\Satellites</Filter>
+    </ClInclude>
+    <ClInclude Include="part.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="destructibleEntity.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testPart.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testFragment.h">
+      <Filter>Header Files\Test Files</Filter>
+    </ClInclude>
+    <ClInclude Include="testCollision.h">
+      <Filter>Header Files\Test Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

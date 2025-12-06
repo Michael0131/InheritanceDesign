@@ -28,8 +28,6 @@ public:
 
         alive = true;
 
-        double metersPerPixel = pos.getZoom();
-
         // Sputnik radius is 4 pixels
         setRadius(4.0 * metersPerPixel);
     }
@@ -39,4 +37,6 @@ public:
         // Let Simulator compute orientation (angleToEarth)
         gout.drawSputnik(pos, angle);
     }
+protected:
+   int fragmentCountOnBreakup() const override { return 4; }
 };

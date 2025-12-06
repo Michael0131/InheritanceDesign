@@ -22,6 +22,14 @@ protected:
    // Which parts should be created? (default: none)
    virtual void createParts(Simulator& /*sim*/) {}
 
+   struct DebrisSpawn
+   {
+      Position pos;
+      Velocity vel;
+   };
+
+   // helper to compute pos/vel for one piece of debris (part or fragment)
+   DebrisSpawn makeDebrisSpawn() const;
 
 private:
    void createFragments(Simulator& sim);
