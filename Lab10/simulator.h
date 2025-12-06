@@ -47,6 +47,9 @@ public:
     // Dream Chaser
     DreamChaser dreamChaser;
 
+    //Fragment
+    std::vector<Fragment*> fragments;
+
     std::vector<Entity*> getEntities()
     {
        std::vector<Entity*> entities;
@@ -59,6 +62,10 @@ public:
        entities.push_back(&dreamChaser);
 
        // all fragments and parts
+       for (Fragment* f : fragments)
+          entities.push_back(f);
+
+
 
        return entities;
     }
@@ -112,5 +119,12 @@ Simulator::Simulator(Position ptUpperRight)
     sats.push_back(new Hubble);
     sats.push_back(new Sputnik);
     sats.push_back(new Starlink);
+
+
+    // Fragments
+    Position fragPos(-23'001'634.72, 13'280'000.0);
+    Velocity fragVel(-1940.0, -3360.18);
+
+    fragments.push_back(new Fragment(fragPos, fragVel));
 
 }

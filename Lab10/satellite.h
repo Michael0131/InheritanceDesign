@@ -2,7 +2,7 @@
 
 
 #include "entity.h"
-
+#include "fragment.h"
 
 class TestSatellite;
 

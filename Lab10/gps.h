@@ -56,4 +56,6 @@ public:
        // Let Simulator compute the angle to Earth
        gout.drawGPS(pos, angle);
    }
+
+
 };

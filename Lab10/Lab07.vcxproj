@@ -156,6 +156,7 @@
     <ClInclude Include="crewDragon.h" />
     <ClInclude Include="dreamChaser.h" />
     <ClInclude Include="entity.h" />
+    <ClInclude Include="fragment.h" />
     <ClInclude Include="gps.h" />
     <ClInclude Include="hubble.h" />
     <ClInclude Include="physics.h" />

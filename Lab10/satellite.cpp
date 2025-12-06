@@ -64,5 +64,5 @@ void Satellite::draw(ogstream& /*gout*/)
 
 void Satellite::breakup()
 {
-   // 
+   // Each satellite defines its own breakup logic
 }

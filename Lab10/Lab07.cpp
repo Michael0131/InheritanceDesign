@@ -20,7 +20,11 @@
 #include "gps.h"
 #include "constants.h"
 #include "dreamChaser.h"
+<<<<<<< Updated upstream
 #include "bullet.h"
+=======
+#include "fragment.h"
+>>>>>>> Stashed changes
 #include <vector>
 
 using namespace std;
@@ -49,6 +53,16 @@ void callBack(const Interface* pUI, void* p)
     Position earthPos;
     earthPos.setMeters(0.0, 0.0);
     gout.drawEarth(earthPos, sim->earthAngle);
+
+    for (Fragment* frag : sim->fragments)
+    {
+       if (!frag->isAlive())
+          continue;
+       frag->update(TIME_PER_FRAME);
+       frag->decay();
+       frag->spin();
+       frag->draw(gout);
+    }
 
     for (Satellite* sat : sim->sats)
     {
