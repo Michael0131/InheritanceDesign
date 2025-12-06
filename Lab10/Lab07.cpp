@@ -20,11 +20,8 @@
 #include "gps.h"
 #include "constants.h"
 #include "dreamChaser.h"
-<<<<<<< Updated upstream
 #include "bullet.h"
-=======
 #include "fragment.h"
->>>>>>> Stashed changes
 #include <vector>
 
 using namespace std;

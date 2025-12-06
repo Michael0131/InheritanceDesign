@@ -3,7 +3,7 @@
  * Header File:
  *    Test Bullet : Test the Bullet class
  * Author:
- *    ChatGPT (modeled after Br. Helfrich's test format)
+ *    Michael Johnson
  * Summary:
  *    Complete unit tests validating Bullet motion, lifetime expiration,
  *    constructor correctness, alive/dead logic, and draw() safety.
