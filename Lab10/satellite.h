@@ -31,6 +31,6 @@ public:
    double angle;
 
 private:
-   void breakup(); // creates Parts and Fragments
+   virtual void breakup(); // creates Parts and Fragments
 
 };

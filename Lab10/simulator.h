@@ -42,7 +42,7 @@ public:
 
     std::vector<Satellite*> sats;
 
-    std::vector<Bullet> bullets;
+    std::vector<Bullet*> bullets;
 
     // Dream Chaser
     DreamChaser dreamChaser;
@@ -60,6 +60,10 @@ public:
 
        // ship
        entities.push_back(&dreamChaser);
+
+       // bullets
+       for (Bullet* b : bullets)
+          entities.push_back(b);
 
        // all fragments and parts
        for (Fragment* f : fragments)

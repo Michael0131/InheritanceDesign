@@ -138,10 +138,14 @@
       <Filter>Header Files</Filter>
     </ClInclude>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <ClInclude Include="bullet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="testBullet.h">
+=======
+    <ClInclude Include="fragment.h">
+>>>>>>> Stashed changes
 =======
     <ClInclude Include="fragment.h">
 >>>>>>> Stashed changes
