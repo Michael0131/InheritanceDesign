@@ -12,24 +12,26 @@ class Fragment : public Entity
 public:
    Fragment(const Position& inPos, const Velocity& inVel)
    {
+      double metersPerPixel = pos.getZoom();
+
       // 
       double theta = random(0, 360) * PI / 180.0;
       double kick = random(5000, 9000);
 
       // Place fragment
-      pos.setMetersX(inPos.getMetersX() + kick * cos(theta));
-      pos.setMetersY(inPos.getMetersY() + kick * sin(theta));
+      pos.setMetersX(inPos.getMetersX() + (4 * metersPerPixel) * cos(theta));
+      pos.setMetersY(inPos.getMetersY() + (4 * metersPerPixel) * sin(theta));
 
       // set Velocity
-      v.setDX(inVel.getDX() + 4 * cos(theta));
-      v.setDY(inVel.getDY() + 4 * sin(theta));
+      v.setDX(inVel.getDX() + kick * cos(theta));
+      v.setDY(inVel.getDY() + kick * sin(theta));
 
       timeToLive = random(50, 100);
 
       alive = true;
       rotation = random(-60, 60);
 
-      double metersPerPixel = pos.getZoom();
+      
 
       // Fragment radius is 2 pixels
       setRadius(2.0 * metersPerPixel);
@@ -54,6 +56,10 @@ public:
    }
    virtual void draw(ogstream& gout) override
    {
+      /*std::cout << "Drawing fragment at ("
+         << pos.getMetersX() << ", "
+         << pos.getMetersY() << ")\n";*/
+
       gout.drawFragment(pos, angle);
    }
 protected:

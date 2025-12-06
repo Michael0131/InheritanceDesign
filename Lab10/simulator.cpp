@@ -53,6 +53,4 @@ Simulator::Simulator(Position ptUpperRight)
    Position fragPos(-23'001'634.72, 13'280'000.0);
    Velocity fragVel(-1940.0, -3360.18);
 
-   fragments.push_back(new Fragment(fragPos, fragVel));
-
 }

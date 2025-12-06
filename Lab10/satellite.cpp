@@ -60,10 +60,3 @@ void Satellite::draw(ogstream& /*gout*/)
 {
    // Base satellite does nothing. Specific satellites (GPS, etc.) override this.
 }
-
-
-void Satellite::breakup(Simulator&)
-{
-   // Each satellite defines its own breakup logic
-   // Base class does nothing
-}

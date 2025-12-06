@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="bullet.cpp" />
+    <ClCompile Include="destructibleEntity.cpp" />
     <ClCompile Include="entity.cpp" />
     <ClCompile Include="gps.cpp" />
     <ClCompile Include="Lab07.cpp" />
@@ -157,6 +158,7 @@
     <ClInclude Include="bullet.h" />
     <ClInclude Include="constants.h" />
     <ClInclude Include="crewDragon.h" />
+    <ClInclude Include="destructibleEntity.h" />
     <ClInclude Include="dreamChaser.h" />
     <ClInclude Include="entity.h" />
     <ClInclude Include="fragment.h" />

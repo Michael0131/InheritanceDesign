@@ -33,7 +33,7 @@ public:
 
    /***********************************************************
     * PARAMETERIZED CONSTRUCTOR
-    * This is what ALL your tests use.
+    * This is what ALL our tests use.
    ***********************************************************/
    GPS(double x, double y, double dx, double dy)
    {
@@ -58,5 +58,8 @@ public:
    }
 
 protected:
-   virtual void breakup(Simulator& sim) override;
+   // How many fragments when the GPS breaks
+   int fragmentCountOnBreakup() const override { return 2; }
+
+   void createParts(Simulator& sim) override;
 };
