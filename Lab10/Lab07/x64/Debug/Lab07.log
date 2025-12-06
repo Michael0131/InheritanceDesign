@@ -1,2 +1,134 @@
-﻿  gps.cpp
-  Lab07.vcxproj -> C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab10\x64\Debug\Lab07.exe
+﻿  bullet.cpp
+  entity.cpp
+  gps.cpp
+  Lab07.cpp
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\Lab07.cpp(115,37): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\Lab07.cpp(117,37): warning C4305: 'argument': truncation from 'double' to 'float'
+  physics.cpp
+  position.cpp
+  satellite.cpp
+  simulator.cpp
+  sputnik.cpp
+  test.cpp
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testPhysics.h(131,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testPhysics.h(197,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testPhysics.h(217,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testPhysics.h(265,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testPhysics.h(314,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testGPS.h(56,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testGPS.h(57,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testGPS.h(75,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testGPS.h(76,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testGPS.h(113,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testGPS.h(114,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testGPS.h(132,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testGPS.h(133,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testGPS.h(191,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testCrewDragon.h(58,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testCrewDragon.h(59,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testCrewDragon.h(85,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testCrewDragon.h(86,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testCrewDragon.h(161,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testCrewDragon.h(190,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testHubble.h(58,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testHubble.h(59,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testHubble.h(85,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testHubble.h(86,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testHubble.h(161,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testHubble.h(190,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testSputnik.h(58,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testSputnik.h(59,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testSputnik.h(86,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testSputnik.h(87,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testSputnik.h(167,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testSputnik.h(199,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testDreamChaser.h(59,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testDreamChaser.h(60,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testDreamChaser.h(76,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testDreamChaser.h(77,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testDreamChaser.h(117,9): warning C4002: too many arguments for function-like macro invocation 'assertEquals'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testDreamChaser.h(114,19): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'test.cpp')
+  
+C:\Users\Michael J\Source\Repos\InheritanceDesign\Lab10\testDreamChaser.h(172,24): warning C4305: 'argument': truncation from 'double' to 'float'
+  (compiling source file 'test.cpp')
+  
+  uiDraw.cpp
+  uiInteract.cpp
+  velocity.cpp
+  Generating Code...
+  Lab07.vcxproj -> C:\Users\Michael J\source\repos\InheritanceDesign\Lab10\x64\Debug\Lab07.exe
