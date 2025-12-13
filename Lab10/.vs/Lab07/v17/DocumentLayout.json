@@ -3,16 +3,80 @@
   "WorkspaceRootPath": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\simulator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:simulator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\simulator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:simulator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\star.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:star.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\gps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:gps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\destructibleEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:destructibleEntity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\destructibleEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:destructibleEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\fragment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:fragment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\hubble.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:hubble.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\crewDragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:crewDragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\starlink.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:starlink.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\sputnik.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:sputnik.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\hubble.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:hubble.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\satellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:satellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\constants.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:constants.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:entity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\testBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\destructibleEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:destructibleEntity.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\entity.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -43,28 +107,8 @@
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testGPS.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\testBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testBullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:Lab07.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\fragment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:fragment.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\part.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:part.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\sputnik.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:sputnik.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\hubble.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:hubble.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\starlink.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -73,14 +117,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\crewDragon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:crewDragon.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\sputnik.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:sputnik.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\gps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:gps.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\gps.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -95,52 +131,16 @@
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:satellite.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\hubble.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:hubble.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\crewDragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:crewDragon.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\starlink.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:starlink.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\satellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:satellite.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:position.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\simulator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:simulator.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\dreamChaser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:dreamChaser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:bullet.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\simulator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:simulator.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\testDreamChaser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:testDreamChaser.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\constants.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:constants.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|solutionrelative:physics.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F1E52473-1D09-448D-BDBA-28DFE55DB99E}|Lab07.vcxproj|C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\position.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -154,7 +154,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 29,
           "Children": [
             {
               "$type": "Bookmark",
@@ -162,7 +162,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
+              "Title": "star.h",
+              "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\star.h",
+              "RelativeDocumentMoniker": "star.h",
+              "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\star.h",
+              "RelativeToolTip": "star.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-12-13T02:10:52.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "testCollision.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\testCollision.h",
               "RelativeDocumentMoniker": "testCollision.h",
@@ -170,12 +183,11 @@
               "RelativeToolTip": "testCollision.h",
               "ViewState": "AgIAACoAAAAAAAAAAAAAAC4AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T22:00:35.338Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T22:00:35.338Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 21,
               "Title": "testFragment.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\testFragment.h",
               "RelativeDocumentMoniker": "testFragment.h",
@@ -183,12 +195,11 @@
               "RelativeToolTip": "testFragment.h",
               "ViewState": "AgIAAHIAAAAAAAAAAAAAAHQAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T21:59:52.591Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T21:59:52.591Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
               "Title": "testPart.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\testPart.h",
               "RelativeDocumentMoniker": "testPart.h",
@@ -196,12 +207,11 @@
               "RelativeToolTip": "testPart.h",
               "ViewState": "AgIAAHUAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T21:59:03.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T21:59:03.393Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 24,
               "Title": "testPosition.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\testPosition.h",
               "RelativeDocumentMoniker": "testPosition.h",
@@ -209,12 +219,11 @@
               "RelativeToolTip": "testPosition.h",
               "ViewState": "AgIAANYAAAAAAAAAAAAcwOsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T21:54:08.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T21:54:08.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 25,
               "Title": "testGPS.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\testGPS.h",
               "RelativeDocumentMoniker": "testGPS.h",
@@ -222,64 +231,63 @@
               "RelativeToolTip": "testGPS.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T21:54:00.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T21:54:00.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 9,
               "Title": "starlink.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\starlink.cpp",
               "RelativeDocumentMoniker": "starlink.cpp",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\starlink.cpp",
               "RelativeToolTip": "starlink.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-06T21:32:03.555Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 8,
               "Title": "crewDragon.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\crewDragon.cpp",
               "RelativeDocumentMoniker": "crewDragon.cpp",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\crewDragon.cpp",
               "RelativeToolTip": "crewDragon.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAowBYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-06T21:30:43.62Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 7,
               "Title": "hubble.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\hubble.cpp",
               "RelativeDocumentMoniker": "hubble.cpp",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\hubble.cpp",
               "RelativeToolTip": "hubble.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAowBsAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-06T21:21:54.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "destructibleEntity.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\destructibleEntity.cpp",
               "RelativeDocumentMoniker": "destructibleEntity.cpp",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\destructibleEntity.cpp",
               "RelativeToolTip": "destructibleEntity.cpp",
-              "ViewState": "AgIAACQAAAAAAAAAAAAuwDcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowDUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-06T19:41:16.741Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 18,
               "Title": "destructibleEntity.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\destructibleEntity.h",
               "RelativeDocumentMoniker": "destructibleEntity.h",
@@ -287,12 +295,11 @@
               "RelativeToolTip": "destructibleEntity.h",
               "ViewState": "AgIAABgAAAAAAAAAAAAAAB8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T19:41:05.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T19:41:05.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 26,
               "Title": "part.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\part.h",
               "RelativeDocumentMoniker": "part.h",
@@ -300,12 +307,11 @@
               "RelativeToolTip": "part.h",
               "ViewState": "AgIAACgBAAAAAAAAAAAcwD0BAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T19:34:10.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T19:34:10.628Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "testDreamChaser.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\testDreamChaser.h",
               "RelativeDocumentMoniker": "testDreamChaser.h",
@@ -317,33 +323,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 1,
               "Title": "simulator.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\simulator.cpp",
               "RelativeDocumentMoniker": "simulator.cpp",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\simulator.cpp",
               "RelativeToolTip": "simulator.cpp",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAA4AAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-06T01:53:53.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "sputnik.cpp",
-              "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\sputnik.cpp",
-              "RelativeDocumentMoniker": "sputnik.cpp",
-              "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\sputnik.cpp",
-              "RelativeToolTip": "sputnik.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-06T01:44:28.684Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 14,
               "Title": "constants.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\constants.h",
               "RelativeDocumentMoniker": "constants.h",
@@ -351,24 +344,25 @@
               "RelativeToolTip": "constants.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T01:43:07.416Z"
+              "WhenOpened": "2025-12-06T01:43:07.416Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
               "Title": "fragment.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\fragment.h",
               "RelativeDocumentMoniker": "fragment.h",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\fragment.h",
               "RelativeToolTip": "fragment.h",
-              "ViewState": "AgIAACEAAAAAAAAAAAAcwDYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAAACwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-06T00:05:07.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 23,
               "Title": "test.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\test.cpp",
               "RelativeDocumentMoniker": "test.cpp",
@@ -376,12 +370,11 @@
               "RelativeToolTip": "test.cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAADkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-06T00:01:40.746Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T00:01:40.746Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "testBullet.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\testBullet.h",
               "RelativeDocumentMoniker": "testBullet.h",
@@ -394,7 +387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 32,
               "Title": "position.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\position.cpp",
               "RelativeDocumentMoniker": "position.cpp",
@@ -402,12 +395,11 @@
               "RelativeToolTip": "position.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-06T00:01:40.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T00:01:40.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 29,
               "Title": "gps.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\gps.h",
               "RelativeDocumentMoniker": "gps.h",
@@ -415,25 +407,24 @@
               "RelativeToolTip": "gps.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T00:01:40.8Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T00:01:40.8Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 4,
               "Title": "gps.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\gps.cpp",
               "RelativeDocumentMoniker": "gps.cpp",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\gps.cpp",
               "RelativeToolTip": "gps.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowAgAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-06T01:49:01.656Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 12,
               "Title": "satellite.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\satellite.cpp",
               "RelativeDocumentMoniker": "satellite.cpp",
@@ -446,7 +437,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 31,
               "Title": "satellite.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\satellite.h",
               "RelativeDocumentMoniker": "satellite.h",
@@ -454,25 +445,24 @@
               "RelativeToolTip": "satellite.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T00:01:40.801Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T00:01:40.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 15,
               "Title": "entity.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\entity.h",
               "RelativeDocumentMoniker": "entity.h",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\entity.h",
               "RelativeToolTip": "entity.h",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAowDwAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowEEAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-06T00:01:40.802Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 19,
               "Title": "entity.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\entity.cpp",
               "RelativeDocumentMoniker": "entity.cpp",
@@ -480,12 +470,11 @@
               "RelativeToolTip": "entity.cpp",
               "ViewState": "AgIAAAkAAAAAAAAAAAAowBgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-06T00:01:40.802Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T00:01:40.802Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "bullet.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\bullet.cpp",
               "RelativeDocumentMoniker": "bullet.cpp",
@@ -493,12 +482,11 @@
               "RelativeToolTip": "bullet.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-06T00:01:40.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T00:01:40.803Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 33,
               "Title": "dreamChaser.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\dreamChaser.h",
               "RelativeDocumentMoniker": "dreamChaser.h",
@@ -506,51 +494,50 @@
               "RelativeToolTip": "dreamChaser.h",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAB0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T00:01:40.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T00:01:40.803Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 2,
               "Title": "simulator.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\simulator.h",
               "RelativeDocumentMoniker": "simulator.h",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\simulator.h",
               "RelativeToolTip": "simulator.h",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAE0AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-06T00:01:40.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "Lab07.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\Lab07.cpp",
               "RelativeDocumentMoniker": "Lab07.cpp",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\Lab07.cpp",
               "RelativeToolTip": "Lab07.cpp",
-              "ViewState": "AgIAALIAAAAAAAAAAAAcwMcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDAAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-12-06T00:01:40.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 16,
               "Title": "bullet.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\bullet.h",
               "RelativeDocumentMoniker": "bullet.h",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\bullet.h",
               "RelativeToolTip": "bullet.h",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAMwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-06T00:01:40.805Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 13,
               "Title": "physics.cpp",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\physics.cpp",
               "RelativeDocumentMoniker": "physics.cpp",
@@ -558,7 +545,8 @@
               "RelativeToolTip": "physics.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-12-06T00:01:40.806Z"
+              "WhenOpened": "2025-12-06T00:01:40.806Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -574,33 +562,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 11,
               "Title": "hubble.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\hubble.h",
               "RelativeDocumentMoniker": "hubble.h",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\hubble.h",
               "RelativeToolTip": "hubble.h",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAACoAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-06T00:01:40.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 10,
               "Title": "sputnik.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\sputnik.h",
               "RelativeDocumentMoniker": "sputnik.h",
               "ToolTip": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\sputnik.h",
               "RelativeToolTip": "sputnik.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-12-06T00:01:40.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 27,
               "Title": "starlink.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\starlink.h",
               "RelativeDocumentMoniker": "starlink.h",
@@ -608,12 +596,11 @@
               "RelativeToolTip": "starlink.h",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T00:01:40.808Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T00:01:40.808Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 28,
               "Title": "crewDragon.h",
               "DocumentMoniker": "C:\\Users\\mathk\\OneDrive\\Documents\\To Laptop - Doc\\BYU-I\\Fall 2025 BYUI Semester\\CSE231 - Inheritance Design\\InheritanceDesign\\Lab10\\crewDragon.h",
               "RelativeDocumentMoniker": "crewDragon.h",
@@ -621,8 +608,7 @@
               "RelativeToolTip": "crewDragon.h",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-12-06T00:01:40.809Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-06T00:01:40.809Z"
             }
           ]
         }

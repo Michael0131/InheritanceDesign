@@ -150,7 +150,6 @@
     <ClCompile Include="position.cpp" />
     <ClCompile Include="satellite.cpp" />
     <ClCompile Include="simulator.cpp" />
-    <ClCompile Include="sputnik.cpp" />
     <ClCompile Include="starlink.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="uiDraw.cpp" />
@@ -173,6 +172,7 @@
     <ClInclude Include="satellite.h" />
     <ClInclude Include="simulator.h" />
     <ClInclude Include="sputnik.h" />
+    <ClInclude Include="star.h" />
     <ClInclude Include="starlink.h" />
     <ClInclude Include="test.h" />
     <ClInclude Include="testBullet.h" />

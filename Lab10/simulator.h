@@ -11,6 +11,7 @@
 #include "bullet.h"
 #include "fragment.h"
 #include "part.h"
+#include "star.h"
 #include <vector>
 
 /***********************************************
@@ -54,6 +55,9 @@ public:
     std::vector<Part*> parts;
     // Fragment
     std::vector<Fragment*> fragments;
+
+    // Stars
+    std::vector<Star*> stars;
 
     std::vector<Entity*> getEntities()
     {

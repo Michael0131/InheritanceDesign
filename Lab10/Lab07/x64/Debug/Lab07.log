@@ -1,2 +1,9 @@
-﻿  destructibleEntity.cpp
+﻿  Lab07.cpp
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab10\Lab07.cpp(131,37): warning C4305: 'argument': truncation from 'double' to 'float'
+C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab10\Lab07.cpp(133,37): warning C4305: 'argument': truncation from 'double' to 'float'
+  crewDragon.cpp
+  gps.cpp
+  hubble.cpp
+  starlink.cpp
+  Generating Code...
   Lab07.vcxproj -> C:\Users\mathk\OneDrive\Documents\To Laptop - Doc\BYU-I\Fall 2025 BYUI Semester\CSE231 - Inheritance Design\InheritanceDesign\Lab10\x64\Debug\Lab07.exe

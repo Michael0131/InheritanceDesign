@@ -46,6 +46,13 @@ void callBack(const Interface* pUI, void* p)
     Position pt;
     ogstream gout(pt);
 
+    // Draw Stars
+    for (Star* star : sim->stars)
+    {
+       star->draw(gout);
+       star->update();
+    }
+
     // Draw Earth at (0,0)
     Position earthPos;
     earthPos.setMeters(0.0, 0.0);
@@ -158,7 +165,7 @@ void callBack(const Interface* pUI, void* p)
 
           if (a->collidesWith(*b))     // geometric test
           {
-             cout << "Collided!" << endl;
+             //cout << "Collided!" << endl;
              a->onCollision(*b, *sim);      // response
              b->onCollision(*a, *sim);
           }

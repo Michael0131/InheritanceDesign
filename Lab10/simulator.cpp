@@ -11,6 +11,13 @@ Simulator::Simulator(Position ptUpperRight)
 
    earthAngle = 0.0;  // <<< start Earth at angle 0
 
+   // Stars
+   double NUM_STARS = 50;
+   for (int i = 0; i < NUM_STARS; i++)
+   {
+      stars.push_back(new Star(ptUpperRight));
+   }
+
    // A set of 6 GPS Satellites
    sats.push_back(new GPS(
       0.0, 26'560'000.0,
